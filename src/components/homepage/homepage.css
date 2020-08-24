@@ -1,0 +1,199 @@
+.slider-wrap {
+  display: block;
+  position: relative;
+}
+
+.slide-controls {
+  position: absolute;
+  z-index: 80;
+  left: 25px;
+  top: 28vh;
+  padding: 10px;
+  display: block;
+}
+
+.slide-controls > button {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.slide-controls > button > .fas {
+  color: #db929d;
+  font-size: 24px;
+}
+
+.slide-controls > button.prev {
+  margin-bottom: 20px;
+}
+.slide-controls > button.next {
+  margin-top: 35px;
+}
+
+.slide.slide.one {
+  background: url(../../assets/land.jpg) no-repeat center;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  z-index: 3;
+}
+
+.slide.slide.two {
+  background: url(../../assets/moonlight-5362539_1920.jpg) no-repeat center;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  z-index: 2;
+}
+
+.slide.slide.three {
+  background: url(../../assets//moon-5338374_1920.jpg) no-repeat center;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  z-index: 1;
+}
+
+.slide {
+  height: 100vh;
+  padding: 55px 105px;
+  position: absolute;
+  width: 100vw;
+  right: 0;
+  top: -100vh;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+}
+
+.show-slide {
+  top: 0;
+  transition: all 0.3s cubic-bezier(0.7, 0.44, 0.58, 1);
+}
+
+.show-slide + .slide {
+  top: 0;
+}
+
+.slide .text {
+  line-height: 78px;
+  font-weight: 600;
+  font-size: 70px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 30px;
+  word-spacing: 1px;
+  opacity: 100;
+  transition: all 0.5s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1s;
+  transform: translateY(20px);
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-family: "Comic Neue", cursive;
+}
+
+.hide-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1.5s;
+}
+
+.slide .btn {
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 37px;
+  outline: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 30px;
+  transform: translateY(30px);
+  opacity: 100;
+  transition: all 0.3s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1.5s;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Comic Neue", cursive;
+  cursor: pointer;
+}
+
+.hide-btn {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.76, 0.91, 0.01, 0.14) 2s;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.slide-dots {
+  position: absolute;
+  width: 100px;
+  z-index: 120;
+  bottom: 55vh;
+  right: 4px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 140px);
+  flex-flow: column wrap;
+}
+
+.slide-dots .dot {
+  width: 20px;
+  color: #000;
+  background-color: rgba(228, 194, 209, 0.4);
+  padding: 5px;
+  margin: 10px;
+  line-height: 22px;
+  background-color: transparent;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  z-index: 101;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.slide-dots .dot::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -3px;
+  background-color: #fff;
+}
+
+.slide-dots .dot:hover::after {
+  transform: scale(1.2);
+}
+
+.slide-dots .dot.active {
+  border-color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.social-icons {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  transform: translate(90px, 20px);
+  padding: 10px 15px;
+}
+
+.social-icons a {
+  margin: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.social-icons a .fab {
+  font-size: 24px;
+}
