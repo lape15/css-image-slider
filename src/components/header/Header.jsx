@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./header.css";
-import logo from "../../assets/stuff.png";
+import logo from "../../assets/logo.png";
 const Header = () => {
   const [fixed, setFixed] = useState(false);
   let ref = useRef(null);
@@ -32,10 +32,10 @@ const Header = () => {
   // });
 
   const listenScrollEvent = (e) => {
-    if (window.scrollY >= 220) {
+    if (window.scrollY >= 400) {
       setFixed(true);
       console.log(window.scrollY);
-    } else if (window.scrollY < 220) {
+    } else if (window.scrollY < 400) {
       setFixed(false);
     }
   };

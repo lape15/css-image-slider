@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
+import AOS from "aos";
+import tower from "../../assets/tower.jpg";
+import "aos/dist/aos.css";
 
 const About = () => {
   const [load, setLoad] = useState(false);
   useEffect(() => {
+    AOS.init({
+      // delay: 700,
+      offset: 400,
+      duration: 1500,
+    });
     setLoad(true);
   }, []);
 
@@ -29,20 +37,20 @@ const About = () => {
       </div>
       <div className="container-three">
         <div className="item-one">
-          <div className="content">
+          <div className="content" data-aos="slide-right">
             <h6>Our vision</h6>
             <span>
               Providing sustainable and affordable world class solutions.
             </span>
           </div>
-          <div className="content">
+          <div className="content" data-aos="slide-right">
             <h6>Our mission</h6>
             <span>
               Reaching capacity building through cost effective and competitive
               brand building
             </span>
           </div>
-          <div className="content">
+          <div className="content" data-aos="slide-right">
             <h6>Our responsibiliy</h6>
             <span>
               Elder wand pride itself in qualitfy service delivery.It makes sure
@@ -50,8 +58,17 @@ const About = () => {
             </span>
           </div>
         </div>
-        <div className="item-two">Holla</div>
+        <div className="item-two">
+          <img
+            src={tower}
+            alt="tower"
+            data-aos="slide-up"
+            className="img"
+            // data-aos-delay="1200"
+          />
+        </div>
       </div>
+      <div className="container-four">HOLLA</div>
     </div>
   );
 };

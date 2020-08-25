@@ -6,10 +6,11 @@ header {
   left: 0;
   box-sizing: border-box;
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   padding: 10px;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 header.absolute {
   position: absolute;
@@ -23,21 +24,24 @@ header.fixed {
 }
 
 .image-con {
-  width: 40%;
+  width: 20%;
+  height: 70px;
 }
 ul {
-  width: 40%;
+  width: 60%;
   color: #cf7402;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 20px;
+  text-align: right;
+  height: 70px;
 }
 
 li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   margin: 10px;
   font-size: 18px;
   padding: 5px;
+  /* margin-top: 15px; */
 }
 
 .far,
@@ -48,8 +52,9 @@ li {
 }
 
 img {
-  width: 170px;
-  height: 80px;
   object-fit: cover;
+  /* transform: scale(0.3); */
   color: #fff;
+  /* border: 2px solid green; */
+  width: 200px;
 }
