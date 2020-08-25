@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./menu-items.css";
-
+import { Link } from "react-router-dom";
 const MenuItems = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [fixed, setFixed] = useState(false);
@@ -36,9 +36,9 @@ const MenuItems = () => {
       </div>
 
       <div className="menu-items">
-        <div className={`box about ${showMenu ? "shrink" : ""}`}>
+        <Link className={`box about ${showMenu ? "shrink" : ""}`} to="/about">
           <i className="fas fa-info-circle em"></i>About
-        </div>
+        </Link>
         <div className={`box services ${showMenu ? "shrink-one" : ""}`}>
           <i className="fas fa-wrench em"></i>Services
         </div>

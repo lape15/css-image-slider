@@ -34,7 +34,6 @@ const Header = () => {
   const listenScrollEvent = (e) => {
     if (window.scrollY >= 400) {
       setFixed(true);
-      console.log(window.scrollY);
     } else if (window.scrollY < 400) {
       setFixed(false);
     }

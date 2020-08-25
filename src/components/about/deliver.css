@@ -1,0 +1,64 @@
+.container-four {
+  z-index: 70;
+  right: 0;
+  left: 0;
+  position: absolute;
+  transform: translateY(147%);
+  min-height: 100vh;
+  border: 2px solid green;
+  padding: 10px 15px;
+  padding: 10px 145px;
+  background: url(../../assets/about.svg);
+}
+
+.deli-atrr {
+  border: 2px solid red;
+  padding: 10px;
+}
+.deli-atrr h2 {
+  text-align: center;
+  padding: 5px;
+  font-weight: 700;
+  font-family: "Comic Neue", cursive;
+  font-size: 3.2rem;
+  color: #08c8d5;
+  position: relative;
+}
+.deli-atrr h2::before {
+  content: "We";
+  position: absolute;
+  transform: translateX(-80px);
+  color: #000;
+}
+
+.deli-box {
+  padding: 10px;
+  border: 2px solid blue;
+}
+.item-box {
+  border: 2px solid green;
+}
+
+.item-box img {
+  width: 65px;
+  height: 65px;
+}
+.item-box.one {
+  background: url(../../assets/friends.svg) no-repeat;
+  background-position: center;
+}
+
+.item-box.two {
+  background: url(../../assets/speed.svg) no-repeat;
+  background-position: center;
+}
+
+.item-box.three {
+  background: url(../../assets/head.svg) no-repeat;
+  background-position: center;
+}
+
+.item-box.four {
+  background: url(../../assets/bulb.svg) no-repeat;
+  background-position: center;
+}

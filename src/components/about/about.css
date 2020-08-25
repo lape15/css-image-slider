@@ -81,8 +81,8 @@
 
 .container-three {
   z-index: 90;
-  right: 17vh;
-  left: 17vh;
+  right: 0;
+  left: 0;
   position: absolute;
   transform: translateY(240px);
   height: 100vh;
@@ -90,8 +90,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
-  padding: 10px 15px;
+  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
+  padding: 10px 135px;
 }
 
 .item-one {
@@ -147,15 +147,4 @@
   position: absolute;
   top: -70px;
   right: 60px;
-}
-
-.container-three {
-  z-index: 60;
-  right: 17vh;
-  left: 17vh;
-  position: absolute;
-  transform: translateY(340px);
-  height: 100vh;
-  border: 2px solid green;
-  padding: 10px 15px;
 }

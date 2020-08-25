@@ -3,13 +3,14 @@ import "./about.css";
 import AOS from "aos";
 import tower from "../../assets/tower.jpg";
 import "aos/dist/aos.css";
+import Deliver from "./Deliver";
 
 const About = () => {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     AOS.init({
       // delay: 700,
-      offset: 400,
+      // offset: 400,
       duration: 1500,
     });
     setLoad(true);
@@ -68,7 +69,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="container-four">HOLLA</div>
+      <Deliver />
     </div>
   );
 };
