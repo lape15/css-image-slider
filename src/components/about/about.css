@@ -1,6 +1,5 @@
 .abt-container {
   background-color: #fff;
-
   position: relative;
   z-index: 60;
 }
@@ -13,7 +12,6 @@
 }
 
 .container-one .text-in {
-  /* transform: scale(1.2); */
   color: #fff;
   line-height: 78px;
   font-weight: 600;
@@ -147,4 +145,320 @@
   position: absolute;
   top: -70px;
   right: 60px;
+}
+
+.container-four {
+  z-index: 70;
+  right: 0;
+  left: 0;
+  position: absolute;
+  transform: translateY(122%);
+  min-height: 100vh;
+  /* border: 2px solid green; */
+  padding: 10px 15px;
+  padding: 10px 85px;
+  background: url(../../assets/about.svg);
+}
+
+.deli-atrr {
+  /* border: 2px solid red; */
+  padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+}
+.deli-atrr h2 {
+  text-align: center;
+  padding: 5px;
+  font-weight: 700;
+  font-family: "Comic Neue", cursive;
+  font-size: 3.2rem;
+  color: #08c8d5;
+  position: relative;
+}
+.deli-atrr h2::before {
+  content: "We";
+  position: absolute;
+  transform: translateX(-80px);
+  color: #000;
+}
+
+.deli-box {
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row wrap;
+
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  align-content: center;
+}
+
+.deli-box.two {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.item-box {
+  width: 22%;
+  padding: 10px;
+  height: 190px;
+  text-align: center;
+  border-radius: 17px;
+  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
+  margin: 10px;
+  margin-top: 20px;
+  align-self: end;
+}
+
+.item-box img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  transform: translate(-58px, 35px);
+}
+
+.item-box div {
+  transform: translate(0px, 120px);
+  padding: 5px;
+  font-weight: 200;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.2rem;
+  color: #08c8d5;
+}
+.item-box.one {
+  background: url(../../assets/friends.svg), #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-box.two {
+  background: url(../../assets/speed.svg) #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-box.three {
+  background: url(../../assets/head.svg) #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-box.four {
+  background: url(../../assets/bulb.svg) #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+.message {
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+}
+.message span {
+  color: #000;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.message span > .far {
+  background-color: #000;
+}
+
+.testimonial-slider {
+  z-index: 70;
+  right: 0;
+  left: 0;
+  transform: translateY(1498px);
+  height: 460px;
+  width: 100%;
+
+  padding: 5px 0;
+  background: url(../../assets/about.svg);
+  overflow: hidden;
+}
+.slide-con {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+
+.slider {
+  margin: 10px;
+  width: 45%;
+  flex: 0 0 35%;
+  padding: 25px 10px;
+  border-radius: 17px;
+  height: 280px;
+  color: #fff;
+  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
+  background-color: #22ced9;
+  text-align: center;
+  filter: blur(2px);
+  transform: translateX(-100px) scale(0.8);
+}
+.active:nth-last-child(5) {
+  filter: blur(0px);
+  transform: translateX(10px) scale(1);
+}
+
+.active:nth-last-child(4) {
+  filter: blur(0px);
+  transform: translateX(40px) scale(1);
+}
+
+.active:nth-last-child(4) + .slider {
+  filter: blur(2px);
+  transform: translateX(80px) scale(0.8);
+}
+/* .slider.previous-before {
+  filter: blur(2px);
+  transform: translateX(-280px) scale(0.8);
+}
+.slider.previous-after {
+  filter: blur(2px);
+  transform: translateX(-280px);
+}
+.slider.next {
+  filter: blur(0px);
+  transform: scale(1);
+}
+.slider.next.after {
+  filter: blur(0px);
+  transform: translateX(280px);
+}
+.slider.next.after-after {
+  filter: blur(0px);
+  transform: translateX(280px);
+} */
+
+.slider blockquote {
+  padding: 5px;
+  font-weight: 100;
+  font-family: "Comic Neue", cursive;
+  font-size: 1rem;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.slider .profile {
+  display: inline-block;
+  width: 100%;
+}
+
+.slider .profile .title {
+  display: inline-block;
+  width: 60%;
+  height: 60px;
+}
+.slider .profile .title span {
+  margin: 5px;
+  padding: 10px;
+  font-family: "Comic Neue", cursive;
+  font-size: 1rem;
+  line-height: 27px;
+}
+.slider .profile .title span.ceo {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.slider .profile .img-con {
+  display: inline-block;
+  width: 15%;
+  height: 60px;
+  transform: translateY(5px);
+}
+.slider .profile .img-con img {
+  width: 50px;
+  height: 50px;
+  border-radius: 17px;
+}
+
+.controls {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.controls .slider-controls {
+  padding: 10px;
+  display: inline-block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slider-controls > button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.slider-controls > button.next {
+  transform: translateX(70px);
+}
+.slider-controls > button > .fas {
+  color: #db929d;
+  font-size: 24px;
+}
+
+.slider-dots {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row;
+  /* transform: translate(50px, 140px); */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-dots .dot {
+  width: 20px;
+  color: #22ced9;
+
+  background-color: rgba(228, 194, 209, 0.4);
+  padding: 5px;
+  margin: 10px;
+  line-height: 22px;
+  background-color: transparent;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  z-index: 101;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.slider-dots .dot::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -3px;
+  background-color: #22ced9;
+}
+
+.slider-dots .dot:hover::after {
+  transform: scale(1.2);
+}
+
+.slider-dots .dot.active {
+  border-color: #22ced9;
+  border-radius: 100%;
+  cursor: pointer;
 }

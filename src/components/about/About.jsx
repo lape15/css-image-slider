@@ -3,7 +3,11 @@ import "./about.css";
 import AOS from "aos";
 import tower from "../../assets/tower.jpg";
 import "aos/dist/aos.css";
-import Deliver from "./Deliver";
+import user from "../../assets/user.svg";
+import speed from "../../assets/speedometer.svg";
+import briefcase from "../../assets/suitcase.svg";
+import idea from "../../assets/idea.svg";
+import Testimonial from "./Deliver";
 
 const About = () => {
   const [load, setLoad] = useState(false);
@@ -11,7 +15,7 @@ const About = () => {
     AOS.init({
       // delay: 700,
       // offset: 400,
-      duration: 1500,
+      duration: 2500,
     });
     setLoad(true);
   }, []);
@@ -60,16 +64,75 @@ const About = () => {
           </div>
         </div>
         <div className="item-two">
-          <img
-            src={tower}
-            alt="tower"
-            data-aos="slide-up"
-            className="img"
-            // data-aos-delay="1200"
-          />
+          <img src={tower} alt="tower" data-aos="slide-up" className="img" />
         </div>
       </div>
-      <Deliver />
+      <div className="container-four">
+        <div className="deli-atrr">
+          <h2>DELIVER</h2>
+          <div
+            className="deli-box"
+            data-aos="slide-up"
+            data-aos-duration="2800"
+            data-aos-delay="170"
+          >
+            <div className="item-box one" data-aos="flip-up">
+              <img src={user} alt="user" />
+              <div>Dependable</div>
+            </div>
+            <div className="item-box two" data-aos="flip-up">
+              <img src={speed} alt="rocket" />
+              <div>Effecient</div>
+            </div>
+            <div className="item-box three" data-aos="flip-up">
+              <img src={briefcase} alt="boss" />
+              <div>Leader</div>
+            </div>
+            <div className="item-box four" data-aos="flip-up">
+              <img src={idea} alt="rocket" />
+              <div>Innovative</div>
+            </div>
+          </div>
+          <div
+            className="deli-box two"
+            data-aos="slide-up"
+            data-aos-duration="2900"
+            data-aos-delay="200"
+          >
+            <div
+              className="item-box two"
+              data-aos="flip-up"
+              data-aos-delay="500"
+            >
+              <img src={speed} alt="rocket" />
+              <div>Versatile</div>
+            </div>
+            <div
+              className="item-box two"
+              data-aos="flip-up"
+              data-aos-delay="500"
+            >
+              <img src={speed} alt="rocket" />
+              <div>Energetic</div>
+            </div>
+            <div
+              className="item-box three"
+              data-aos="flip-up"
+              data-aos-delay="500"
+            >
+              <img src={briefcase} alt="boss" />
+              <div>Responsible</div>
+            </div>
+          </div>
+
+          <div className="message">
+            <span role="img" aria-label="emoji">
+              ...and they <i className="fas fa-heart"></i> it.
+            </span>
+          </div>
+        </div>
+      </div>
+      <Testimonial />
     </div>
   );
 };

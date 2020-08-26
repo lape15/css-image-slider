@@ -12,8 +12,10 @@
 }
 
 .deli-atrr {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 10px;
+  margin: 0 auto;
+  width: 90%;
 }
 .deli-atrr h2 {
   text-align: center;
@@ -32,33 +34,71 @@
 }
 
 .deli-box {
-  padding: 10px;
-  border: 2px solid blue;
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: row wrap;
+
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  align-content: center;
+}
+
+.deli-box.two {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .item-box {
-  border: 2px solid green;
+  width: 22%;
+  padding: 10px;
+  height: 190px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
+  margin: 10px;
+  margin-top: 20px;
+  align-self: end;
 }
 
 .item-box img {
   width: 65px;
   height: 65px;
+  position: absolute;
+  transform: translate(-58px, 35px);
+}
+
+.item-box div {
+  transform: translate(0px, 120px);
+  padding: 5px;
+  font-weight: 200;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.2rem;
+  color: #08c8d5;
 }
 .item-box.one {
-  background: url(../../assets/friends.svg) no-repeat;
+  background: url(../../assets/friends.svg), #fff;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .item-box.two {
-  background: url(../../assets/speed.svg) no-repeat;
+  background: url(../../assets/speed.svg) #fff;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .item-box.three {
-  background: url(../../assets/head.svg) no-repeat;
+  background: url(../../assets/head.svg) #fff;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .item-box.four {
-  background: url(../../assets/bulb.svg) no-repeat;
+  background: url(../../assets/bulb.svg) #fff;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: 40%;
 }
