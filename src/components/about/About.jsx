@@ -14,6 +14,7 @@ import fast from "../../assets/sponsors/21_fast_ever.png";
 import kolo from "../../assets/sponsors/Koloroo.jpg";
 import bird from "../../assets/sponsors/bird.png";
 import dummy from "../../assets/sponsors/dummy.png";
+import bump from "../../assets/4.jpg";
 
 const About = () => {
   const [load, setLoad] = useState(false);
@@ -171,7 +172,9 @@ const About = () => {
             </span>
             <button>Reach out now</button>
           </div>
-          <div className="message-two"></div>
+          <div className="message-two">
+            <img src={bump} alt="bump" />
+          </div>
         </div>
       </div>
     </div>

@@ -12,11 +12,11 @@ const Testimonial = () => {
       setActiveSlide(activeSlide + 1);
       setNextActiveSlide([nextActiveSlide[0] + 1, nextActiveSlide[1] + 1]);
     } else if (typeof position === "number" && activeSlide < 5) {
-      if (nextActiveSlide.includes(position) && position === activeSlide) {
+      if (position === 1 || position === 2) {
         console.log("it is present", +position);
-        setNextActiveSlide([position, nextActiveSlide[1]]);
+        setNextActiveSlide([...nextActiveSlide]);
       } else {
-        setNextActiveSlide([position, position + 1]);
+        setNextActiveSlide([nextActiveSlide[1], position]);
       }
       // setActiveSlide(position);
       // console.log(activeSlide, position);

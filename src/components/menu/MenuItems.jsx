@@ -26,8 +26,18 @@ const MenuItems = () => {
   const handleMenu = () => {
     setShowMenu(!showMenu);
   };
+  console.log(showMenu);
+  const changeClass = () => {
+    if (fixed) {
+      return "fixed";
+    }
+    if (!showMenu) {
+      return "new-height";
+    }
+    return "";
+  };
   return (
-    <div ref={ref} className={`menu-box ${fixed ? "fixed" : ""}`}>
+    <div ref={ref} className={`menu-box ${changeClass()}`}>
       <div
         className={`menu-btn ${showMenu ? "right" : ""}`}
         onClick={handleMenu}
