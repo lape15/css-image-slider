@@ -2,29 +2,28 @@ import React, { useState } from "react";
 import lady from "../../assets/lady.jpg";
 const Testimonial = () => {
   const [nextActiveSlide, setNextActiveSlide] = useState([1, 2]);
+  const [activeSlide, setActiveSlide] = useState(1);
 
-  let activeSlide = 2;
   const nextSlide = (position) => {
-    let newArray = nextActiveSlide;
-    let snippedArray;
-    if (position === "previous" && nextActiveSlide > 1) {
-      activeSlide = activeSlide - 1;
-      snippedArray = newArray.splice(newArray.length - 1, 1);
-      newArray.unshift(activeSlide);
-      setNextActiveSlide(snippedArray);
-      console.log(nextActiveSlide, snippedArray);
-    } else if (position === "next" || nextActiveSlide < 5) {
-      activeSlide = activeSlide + 1;
-      snippedArray = newArray.splice(newArray[0], 1);
-      snippedArray.push(activeSlide);
-      console.log(activeSlide, snippedArray);
-      setNextActiveSlide(snippedArray);
-      console.log(nextActiveSlide);
+    if (position === "previous" && activeSlide > 1) {
+      setActiveSlide(activeSlide - 1);
+      setNextActiveSlide([nextActiveSlide[0] - 1, nextActiveSlide[1] - 1]);
+    } else if (position === "next" && activeSlide < 5) {
+      setActiveSlide(activeSlide + 1);
+      setNextActiveSlide([nextActiveSlide[0] + 1, nextActiveSlide[1] + 1]);
     } else if (typeof position === "number" && activeSlide < 5) {
-      activeSlide = activeSlide + 1;
+      if (nextActiveSlide.includes(position) && position === activeSlide) {
+        console.log("it is present", +position);
+        setNextActiveSlide([position, nextActiveSlide[1]]);
+      } else {
+        setNextActiveSlide([position, position + 1]);
+      }
+      // setActiveSlide(position);
+      // console.log(activeSlide, position);
+      // setNextActiveSlide([nextActiveSlide[1], position]);
     }
   };
-
+  console.log(nextActiveSlide);
   const checkArrActiveArray = (arr, n) => {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] === n) {
@@ -34,9 +33,16 @@ const Testimonial = () => {
   };
 
   const switchClass = (n) => {
-    if (checkArrActiveArray(nextActiveSlide, n)) {
-      return "active";
+    let classes = "";
+    if (checkArrActiveArray(nextActiveSlide, n) && activeSlide === n) {
+      classes = "active-first";
+    } else if (
+      checkArrActiveArray(nextActiveSlide, n) &&
+      activeSlide + 1 === n
+    ) {
+      classes = "active-second";
     }
+    return classes;
   };
   return (
     <div className="testimonial-slider">
@@ -162,11 +168,36 @@ const Testimonial = () => {
             <i className="fas fa-arrow-left"></i>
           </button>
           <div className="slider-dots">
-            <button className="dot"></button>
-            <button className="dot"></button>
-            <button className="dot"></button>
-            <button className="dot"></button>
-            <button className="dot"></button>
+            <button
+              className={`dot ${activeSlide === 1 ? "active" : ""}`}
+              onClick={() => {
+                nextSlide(1);
+              }}
+            ></button>
+            <button
+              className={`dot ${activeSlide === 2 ? "active" : ""}`}
+              onClick={() => {
+                nextSlide(2);
+              }}
+            ></button>
+            <button
+              className={`dot ${activeSlide === 3 ? "active" : ""}`}
+              onClick={() => {
+                nextSlide(3);
+              }}
+            ></button>
+            <button
+              className={`dot ${activeSlide === 4 ? "active" : ""}`}
+              onClick={() => {
+                nextSlide(4);
+              }}
+            ></button>
+            <button
+              className={`dot ${activeSlide === 5 ? "active" : ""}`}
+              onClick={() => {
+                nextSlide(5);
+              }}
+            ></button>
           </div>
           <button
             className="next"
@@ -177,6 +208,11 @@ const Testimonial = () => {
             <i className="fas fa-arrow-right"></i>
           </button>
         </div>
+      </div>
+      <div className="messages">
+        <span>
+          <b>See what we do for them </b>
+        </span>
       </div>
     </div>
   );

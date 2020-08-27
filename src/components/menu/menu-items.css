@@ -5,6 +5,7 @@
   padding: 10px;
   height: 550px;
   z-index: 100;
+  /* border: 2px solid blue; */
 }
 .menu-box.fixed {
   position: fixed;
@@ -107,7 +108,7 @@
   height: 100px;
   display: block;
   text-align: center;
-  color: #000;
+  color: #c9600f;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   opacity: 0;

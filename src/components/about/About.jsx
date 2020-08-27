@@ -8,6 +8,12 @@ import speed from "../../assets/speedometer.svg";
 import briefcase from "../../assets/suitcase.svg";
 import idea from "../../assets/idea.svg";
 import Testimonial from "./Deliver";
+import bacardi from "../../assets/sponsors/Bacardi_Logo_900.png";
+import flower from "../../assets/sponsors/floral.jpg";
+import fast from "../../assets/sponsors/21_fast_ever.png";
+import kolo from "../../assets/sponsors/Koloroo.jpg";
+import bird from "../../assets/sponsors/bird.png";
+import dummy from "../../assets/sponsors/dummy.png";
 
 const About = () => {
   const [load, setLoad] = useState(false);
@@ -15,7 +21,7 @@ const About = () => {
     AOS.init({
       // delay: 700,
       // offset: 400,
-      duration: 2500,
+      duration: 2800,
     });
     setLoad(true);
   }, []);
@@ -133,6 +139,41 @@ const About = () => {
         </div>
       </div>
       <Testimonial />
+      <div className="container-five">
+        <div className="logos">
+          <div className="w-15">
+            <img src={bacardi} alt="bacardi" />
+          </div>
+          <div className="w-15">
+            <img src={flower} alt="flower" />
+          </div>
+          <div className="w-15">
+            <img src={fast} alt="fast" />
+          </div>
+          <div className="w-15">
+            <img src={bird} alt="kolo" />
+          </div>
+          <div className="w-15 index">
+            <img src={kolo} alt="bird" />
+          </div>
+          <div className="w-15 index">
+            <img src={dummy} alt="woody" className="woody" />
+          </div>
+        </div>
+        <div className="contact">
+          {" "}
+          <div className="message-one">
+            <h3>Get in touch</h3>{" "}
+            <span>
+              Our core cometence lies in being backed by seasoned operation
+              teamsand partners that have extensive technological knowledge and
+              experience in the following areas
+            </span>
+            <button>Reach out now</button>
+          </div>
+          <div className="message-two"></div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,8 @@
   background-color: #fff;
   position: relative;
   z-index: 60;
+  min-height: 100vh;
+  /* border: 2px solid blue; */
 }
 
 .container-one {
@@ -83,13 +85,14 @@
   left: 0;
   position: absolute;
   transform: translateY(240px);
-  height: 100vh;
+  height: 750px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
   padding: 10px 135px;
+  /* border: 2px solid green; */
 }
 
 .item-one {
@@ -148,16 +151,16 @@
 }
 
 .container-four {
-  z-index: 70;
+  z-index: 75;
   right: 0;
   left: 0;
   position: absolute;
-  transform: translateY(122%);
-  min-height: 100vh;
-  /* border: 2px solid green; */
+  transform: translateY(150%);
+  height: 660px;
   padding: 10px 15px;
   padding: 10px 85px;
   background: url(../../assets/about.svg);
+  /* border: 2px solid green; */
 }
 
 .deli-atrr {
@@ -267,27 +270,28 @@
 }
 
 .testimonial-slider {
-  z-index: 70;
+  z-index: 75;
   right: 0;
   left: 0;
-  transform: translateY(1498px);
-  height: 460px;
+  transform: translateY(1657px);
+  height: 520px;
   width: 100%;
-
-  padding: 5px 0;
+  padding: 5px 125px;
   background: url(../../assets/about.svg);
   overflow: hidden;
 }
 .slide-con {
-  display: flex;
   width: 100%;
-  padding: 5px;
+  padding: 5px 25px;
+  position: relative;
+  /* border: 2px solid green; */
+  height: 350px;
 }
 
 .slider {
-  margin: 10px;
-  width: 45%;
-  flex: 0 0 35%;
+  margin: 0 25px;
+  left: -50%;
+  width: calc(50% - 50px);
   padding: 25px 10px;
   border-radius: 17px;
   height: 280px;
@@ -296,42 +300,27 @@
   background-color: #22ced9;
   text-align: center;
   filter: blur(2px);
-  transform: translateX(-100px) scale(0.8);
+  position: absolute;
+  transform: scale(0.9);
+  transition: all ease-in-out 0.5s;
 }
-.active:nth-last-child(5) {
-  filter: blur(0px);
-  transform: translateX(10px) scale(1);
-}
-
-.active:nth-last-child(4) {
-  filter: blur(0px);
-  transform: translateX(40px) scale(1);
-}
-
-.active:nth-last-child(4) + .slider {
-  filter: blur(2px);
-  transform: translateX(80px) scale(0.8);
-}
-/* .slider.previous-before {
-  filter: blur(2px);
-  transform: translateX(-280px) scale(0.8);
-}
-.slider.previous-after {
-  filter: blur(2px);
-  transform: translateX(-280px);
-}
-.slider.next {
+.slider.active-first {
   filter: blur(0px);
   transform: scale(1);
+  left: 0;
 }
-.slider.next.after {
+
+.slider.active-second {
   filter: blur(0px);
-  transform: translateX(280px);
+  left: 50%;
+  transform: scale(1);
 }
-.slider.next.after-after {
-  filter: blur(0px);
-  transform: translateX(280px);
-} */
+
+.slider.active-second ~ .slider {
+  filter: blur(2px);
+  left: 100%;
+  transform: scale(0.9);
+}
 
 .slider blockquote {
   padding: 5px;
@@ -386,7 +375,6 @@
 .controls .slider-controls {
   padding: 10px;
   display: inline-block;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,7 +413,6 @@
 .slider-dots .dot {
   width: 20px;
   color: #22ced9;
-
   background-color: rgba(228, 194, 209, 0.4);
   padding: 5px;
   margin: 10px;
@@ -461,4 +448,68 @@
   border-color: #22ced9;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.testimonial-slider .messages {
+  text-align: center;
+  padding: 10px;
+}
+.messages span {
+  padding: 5px;
+  color: #22ced9;
+  font-size: 1rem;
+  font-weight: 900;
+  /* letter-spacing: 1px; */
+  font-family: "Comic Neue", cursive;
+}
+
+.container-five {
+  border: 2px solid red;
+  transform: translateY(1658px);
+  height: 500px;
+  z-index: 80;
+  position: absolute;
+  right: 15vh;
+  left: 15vh;
+}
+.logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.w-15 {
+  width: 15%;
+
+  margin-top: 10px;
+  text-align: center;
+}
+
+.w-15 img {
+  width: 160px;
+  filter: grayscale(90%);
+  transform: scale(0.9);
+  height: 100px;
+  transform-origin: center;
+  transition: all ease-in-out 0.7s;
+  cursor: pointer;
+}
+
+.w-15 img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.3);
+}
+.contact {
+  border: 2px solid blue;
+  margin-top: 10px;
+}
+
+.message-two {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../../assets/dots-torquoise.svg);
+  background-position: center, center;
+  background-size: 30%, 30%;
 }
