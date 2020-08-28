@@ -11,16 +11,17 @@ const Testimonial = () => {
     } else if (position === "next" && activeSlide < 5) {
       setActiveSlide(activeSlide + 1);
       setNextActiveSlide([nextActiveSlide[0] + 1, nextActiveSlide[1] + 1]);
-    } else if (typeof position === "number" && activeSlide < 5) {
-      if (position === 1 || position === 2) {
-        console.log("it is present", +position);
+    } else if (typeof position === "number") {
+      if (activeSlide === position) {
         setNextActiveSlide([...nextActiveSlide]);
-      } else {
-        setNextActiveSlide([nextActiveSlide[1], position]);
+      } else if (position > activeSlide) {
+        setActiveSlide(position);
+        console.log(activeSlide);
+        setNextActiveSlide([position, position + 1]);
+      } else if (position < activeSlide) {
+        setActiveSlide(position);
+        setNextActiveSlide([position, position + 1]);
       }
-      // setActiveSlide(position);
-      // console.log(activeSlide, position);
-      // setNextActiveSlide([nextActiveSlide[1], position]);
     }
   };
   console.log(nextActiveSlide);

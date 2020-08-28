@@ -15,6 +15,7 @@ import kolo from "../../assets/sponsors/Koloroo.jpg";
 import bird from "../../assets/sponsors/bird.png";
 import dummy from "../../assets/sponsors/dummy.png";
 import bump from "../../assets/4.jpg";
+import Footer from "./Footer";
 
 const About = () => {
   const [load, setLoad] = useState(false);
@@ -22,7 +23,7 @@ const About = () => {
     AOS.init({
       // delay: 700,
       // offset: 400,
-      duration: 2800,
+      duration: 3000,
     });
     setLoad(true);
   }, []);
@@ -103,13 +104,12 @@ const About = () => {
           <div
             className="deli-box two"
             data-aos="slide-up"
-            data-aos-duration="2900"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             <div
               className="item-box two"
               data-aos="flip-up"
-              data-aos-delay="500"
+              data-aos-delay="100"
             >
               <img src={speed} alt="rocket" />
               <div>Versatile</div>
@@ -117,7 +117,7 @@ const About = () => {
             <div
               className="item-box two"
               data-aos="flip-up"
-              data-aos-delay="500"
+              data-aos-delay="100"
             >
               <img src={speed} alt="rocket" />
               <div>Energetic</div>
@@ -125,7 +125,7 @@ const About = () => {
             <div
               className="item-box three"
               data-aos="flip-up"
-              data-aos-delay="500"
+              data-aos-delay="100"
             >
               <img src={briefcase} alt="boss" />
               <div>Responsible</div>
@@ -173,10 +173,16 @@ const About = () => {
             <button>Reach out now</button>
           </div>
           <div className="message-two">
-            <img src={bump} alt="bump" />
+            <img
+              src={bump}
+              alt="bump"
+              data-aos="slide-up"
+              data-aos-delay="1000"
+            />
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 .abt-container {
   background-color: #fff;
   position: relative;
-  z-index: 60;
+  z-index: 40;
   min-height: 100vh;
-  /* border: 2px solid blue; */
+  border: 2px solid black;
 }
 
 .container-one {
@@ -50,8 +50,9 @@
   background-size: 150px auto, contain;
   background-position: 100px top, center center;
   background-repeat: repeat-y, repeat;
-  height: 350px;
+  height: 430px;
   border-radius: 17px;
+  /* border: 2px solid purple; */
 }
 .container-two.slide-up {
   transform: translate(0, -260px);
@@ -83,16 +84,13 @@
   z-index: 90;
   right: 0;
   left: 0;
-  position: absolute;
-  transform: translateY(240px);
-  height: 750px;
+  height: 780px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
-  padding: 10px 135px;
-  /* border: 2px solid green; */
+  padding: 230px 135px;
 }
 
 .item-one {
@@ -151,16 +149,12 @@
 }
 
 .container-four {
-  z-index: 75;
-  right: 0;
-  left: 0;
-  position: absolute;
-  transform: translateY(150%);
-  height: 660px;
+  z-index: 90;
+  height: 665px;
   padding: 10px 15px;
   padding: 10px 85px;
   background: url(../../assets/about.svg);
-  /* border: 2px solid green; */
+  /* border: 2px solid red; */
 }
 
 .deli-atrr {
@@ -270,14 +264,13 @@
 }
 
 .testimonial-slider {
-  z-index: 75;
-  right: 0;
-  left: 0;
-  transform: translateY(1657px);
+  z-index: 90;
+  margin-top: 1px;
   height: 520px;
   width: 100%;
   padding: 5px 125px;
   background: url(../../assets/about.svg);
+  /* border: 2px solid green; */
   overflow: hidden;
 }
 .slide-con {
@@ -423,7 +416,7 @@
   border: 2px solid transparent;
   outline: none;
   cursor: pointer;
-  z-index: 101;
+
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -464,13 +457,9 @@
 }
 
 .container-five {
-  /* border: 2px solid red; */
-  transform: translateY(1658px);
-  height: 580px;
-  z-index: 80;
-  position: absolute;
-  right: 15vh;
-  left: 15vh;
+  height: 730px;
+  z-index: 90;
+  padding: 10px 105px;
 }
 .logos {
   display: flex;
@@ -506,6 +495,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 35px 10px;
+  height: 490px;
 }
 .message-one {
   padding: 55px 75px;
@@ -555,4 +545,11 @@
   right: 45px;
   bottom: 45px;
   border-radius: 20px;
+}
+.abt-container .pale {
+  border: 2px solid blue;
+  height: 700px;
+  z-index: 98;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0px 10px 5px -5px rgba(22, 188, 196, 0.2);
 }

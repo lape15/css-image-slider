@@ -1,5 +1,5 @@
 .App {
   min-height: 90vh;
   position: relative;
-  height: calc(100vh - 80px);
+  /* height: calc(100vh - 80px); */
 }
