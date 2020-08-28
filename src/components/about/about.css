@@ -3,9 +3,12 @@
   position: relative;
   z-index: 40;
   min-height: 100vh;
-  border: 2px solid black;
 }
 
+.mar-bt {
+  margin-bottom: 95vh;
+  background-color: #fff;
+}
 .container-one {
   background: url(../../assets/land.jpg) no-repeat center;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
@@ -265,7 +268,7 @@
 
 .testimonial-slider {
   z-index: 90;
-  margin-top: 1px;
+  margin-top: 5px;
   height: 520px;
   width: 100%;
   padding: 5px 125px;
@@ -294,6 +297,7 @@
   text-align: center;
   filter: blur(2px);
   position: absolute;
+  transform-origin: center;
   transform: scale(0.9);
   transition: all 0.5s cubic-bezier(0.92, 0.14, 0.34, 0.16);
 }
@@ -460,6 +464,8 @@
   height: 730px;
   z-index: 90;
   padding: 10px 105px;
+
+  background-color: transparent;
 }
 .logos {
   display: flex;
@@ -546,10 +552,10 @@
   bottom: 45px;
   border-radius: 20px;
 }
-.abt-container .pale {
+/* .abt-container .pale {
   border: 2px solid blue;
   height: 700px;
   z-index: 98;
   background-color: lightgoldenrodyellow;
   box-shadow: 0px 10px 5px -5px rgba(22, 188, 196, 0.2);
-}
+} */

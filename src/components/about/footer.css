@@ -1,7 +1,115 @@
 .footer {
-  border: 1px solid pink;
+  height: 100vh;
+  width: 100%;
+  padding: 10px 0px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+}
+.foot-first {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 
-  height: 700px;
+  background-color: #fff;
+  width: 100%;
+  height: 550px;
+  padding: 15px 20px;
+}
+.side-one {
+  width: 45%;
+  height: 85%;
+  padding: 30px 15px;
   text-align: center;
-  background-color: hotpink;
+}
+.side-one .word {
+  word-break: break-all;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+.side-one .word p {
+  color: grey;
+  line-height: 27px;
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+}
+.side-one .word .values {
+  text-align: left;
+  width: 49%;
+  margin: 25px auto;
+  padding: 5px;
+}
+.side-one .word .values h6 {
+  font-size: 1.2rem;
+  font-family: "Comic Neue", cursive;
+  padding: 2px;
+  font-weight: 400;
+}
+.side-one .word .values p {
+  margin-left: 36px;
+}
+.side-one .word .values p span {
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+}
+.side-two {
+  width: 50%;
+  height: 85%;
+  padding: 10px 15px;
+}
+.side-two .value {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.side-two h6 {
+  font-size: 1.2rem;
+  font-family: "Comic Neue", cursive;
+  padding: 2px;
+  font-weight: 400;
+}
+
+.side-two .value ul {
+  display: block;
+
+  padding: 5px;
+}
+.value ul > li {
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+  position: static;
+  margin: 2px;
+  color: grey;
+  font-weight: 400;
+  line-height: 25px;
+  margin-left: 35px;
+}
+
+.link {
+  margin-left: 16px;
+  margin-top: 10px;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: #22ced9;
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+}
+.dir {
+  list-style: none;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+  margin-top: -28px;
+  padding: 10px 5px;
 }

@@ -3,20 +3,20 @@ import lady from "../../assets/lady.jpg";
 const Testimonial = () => {
   const [nextActiveSlide, setNextActiveSlide] = useState([1, 2]);
   const [activeSlide, setActiveSlide] = useState(1);
+  const [lastWheeled, setLastWheeled] = useState(0);
 
   const nextSlide = (position) => {
     if (position === "previous" && activeSlide > 1) {
       setActiveSlide(activeSlide - 1);
       setNextActiveSlide([nextActiveSlide[0] - 1, nextActiveSlide[1] - 1]);
-    } else if (position === "next" && activeSlide < 5) {
+    } else if (position === "next" && activeSlide < 4) {
       setActiveSlide(activeSlide + 1);
       setNextActiveSlide([nextActiveSlide[0] + 1, nextActiveSlide[1] + 1]);
     } else if (typeof position === "number") {
       if (activeSlide === position) {
         setNextActiveSlide([...nextActiveSlide]);
-      } else if (position > activeSlide) {
+      } else if (position > activeSlide && position < 5) {
         setActiveSlide(position);
-        console.log(activeSlide);
         setNextActiveSlide([position, position + 1]);
       } else if (position < activeSlide) {
         setActiveSlide(position);
@@ -24,13 +24,27 @@ const Testimonial = () => {
       }
     }
   };
-  console.log(nextActiveSlide);
+
   const checkArrActiveArray = (arr, n) => {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] === n) {
         return true;
       }
     }
+  };
+  const changeSlide = (e) => {
+    const date = new Date().getTime() - lastWheeled;
+    if (date > 1000) {
+      if (e.deltaX < 0 && activeSlide < 5) {
+        setActiveSlide(activeSlide + 1);
+        setNextActiveSlide([nextActiveSlide[0] + 1, nextActiveSlide[1] + 1]);
+        console.log(nextActiveSlide);
+      } else if (e.deltaX > 0 && activeSlide > 1) {
+        setActiveSlide(activeSlide - 1);
+        setNextActiveSlide([nextActiveSlide[0] - 1, nextActiveSlide[1] - 1]);
+      }
+    }
+    setLastWheeled(new Date().getTime());
   };
 
   const switchClass = (n) => {
@@ -47,7 +61,12 @@ const Testimonial = () => {
   };
   return (
     <div className="testimonial-slider">
-      <div className="slide-con">
+      <div
+        className="slide-con"
+        onWheel={(e) => {
+          changeSlide(e);
+        }}
+      >
         <div className={`slider ${switchClass(1)}`}>
           <blockquote>
             {" "}

@@ -27,7 +27,7 @@ header.fixed {
   width: 20%;
   height: 70px;
 }
-ul {
+header ul {
   width: 60%;
   color: #cf7402;
   padding: 10px 20px;
@@ -35,7 +35,7 @@ ul {
   height: 70px;
 }
 
-li {
+header ul li {
   list-style: none;
   display: inline-block;
   margin: 10px;
