@@ -82,8 +82,8 @@ const About = () => {
             <div
               className="deli-box"
               data-aos="slide-up"
-              data-aos-duration="2800"
-              data-aos-delay="170"
+              // data-aos-duration="2800"
+              data-aos-delay="50"
             >
               <div className="item-box one" data-aos="flip-up">
                 <img src={user} alt="user" />
@@ -105,12 +105,12 @@ const About = () => {
             <div
               className="deli-box two"
               data-aos="slide-up"
-              data-aos-delay="100"
+              data-aos-delay="50"
             >
               <div
                 className="item-box two"
                 data-aos="flip-up"
-                data-aos-delay="100"
+                data-aos-delay="50"
               >
                 <img src={speed} alt="rocket" />
                 <div>Versatile</div>
@@ -118,7 +118,7 @@ const About = () => {
               <div
                 className="item-box two"
                 data-aos="flip-up"
-                data-aos-delay="100"
+                data-aos-delay="50"
               >
                 <img src={speed} alt="rocket" />
                 <div>Energetic</div>
@@ -126,7 +126,7 @@ const About = () => {
               <div
                 className="item-box three"
                 data-aos="flip-up"
-                data-aos-delay="100"
+                data-aos-delay="50"
               >
                 <img src={briefcase} alt="boss" />
                 <div>Responsible</div>
@@ -178,7 +178,7 @@ const About = () => {
                 src={bump}
                 alt="bump"
                 data-aos="slide-up"
-                data-aos-delay="1000"
+                // data-aos-delay="500"
               />
             </div>
           </div>
