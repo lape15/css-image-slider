@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./services.css";
+import Footer from "../about/Footer";
 const Services = () => {
   const [load, setLoad] = useState(false);
 
@@ -29,7 +30,12 @@ const Services = () => {
             extensive knowledge and experience in the following areas.
           </div>
         </div>
+        <div className="services">
+          Section three about to bang yo
+          <div className="services-container">Service items</div>
+        </div>
       </div>
+      <Footer />
     </section>
   );
 };

@@ -5,7 +5,7 @@
 }
 .services {
   color: var(--main-color);
-  min-height: 100vh;
+  height: 100vh;
   z-index: 40;
   position: relative;
 }
@@ -21,6 +21,7 @@
   height: 100vh;
   width: 100%;
   padding: 55px 105px;
+  border: 5px solid black;
 }
 
 .service-one .text-in {
@@ -65,7 +66,7 @@
   background-size: 150px auto, contain;
   background-position: 100px top, center center;
   background-repeat: repeat-y, repeat;
-  height: 480px;
+  height: 500px;
   border-radius: 17px;
 }
 
@@ -78,7 +79,7 @@
   transition: 0.5s ease-out;
 }
 .service-two h2 {
-  font-size: 7.7rem;
+  font-size: 4rem;
   margin-top: 15px;
   margin-left: 90px;
   color: var(--main-black);
@@ -94,4 +95,22 @@
   word-wrap: break-word;
   line-break: normal;
   width: 750px;
+}
+
+.services {
+  height: 100vh;
+  z-index: 90;
+  right: 0;
+  left: 0;
+  border: 2px solid red;
+}
+
+.services-container {
+  border: 2px solid green;
+  padding: 10px 35px;
+  height: 780px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 230px 135px;
 }
