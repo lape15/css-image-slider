@@ -4,6 +4,11 @@ import "./homepage.css";
 const Homepage = (props) => {
   const [activeSlide, setActiveSlide] = useState(1);
   const [lastWheeled, setLastWheeled] = useState(0);
+  const [clicked, setClicked] = useState(false);
+
+  const handleClicked = () => {
+    setClicked(!clicked);
+  };
 
   const changeSlide = (position) => {
     if (position === "previous" && activeSlide > 1) {
@@ -37,10 +42,22 @@ const Homepage = (props) => {
   return (
     <div>
       <div className="slide-controls">
-        <button className="prev" onClick={() => changeSlide("previous")}>
+        <button
+          className={`prev ${clicked ? "dashed" : ""}`}
+          onClick={() => {
+            handleClicked();
+            changeSlide("previous");
+          }}
+        >
           <i className="fas fa-arrow-up"></i>
         </button>
-        <button className="next" onClick={() => changeSlide("next")}>
+        <button
+          className="next"
+          onClick={() => {
+            handleClicked();
+            changeSlide("next");
+          }}
+        >
           <i className="fas fa-arrow-down"></i>
         </button>
       </div>

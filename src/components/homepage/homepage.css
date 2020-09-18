@@ -18,9 +18,12 @@
   padding: 10px;
   background-color: transparent;
   border: 1px solid #f2f2f2;
-  border-radius: 7px;
+  border-radius: 18px;
   cursor: pointer;
+  z-index: 81;
+  position: relative;
 }
+
 .slide-controls > button > .fas {
   color: #db929d;
   font-size: 24px;
@@ -31,6 +34,18 @@
 }
 .slide-controls > button.next {
   margin-top: 35px;
+}
+
+.slide-controls > button.dashed:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 80;
+  top: -10px;
+  left: -5px;
+  padding: 5px;
+  border: 1px dashed rgb(112, 212, 220);
 }
 
 .slide.slide.one {
