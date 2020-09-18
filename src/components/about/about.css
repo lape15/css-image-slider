@@ -10,7 +10,7 @@
   background-color: #fff;
 }
 .container-one {
-  background: url(../../assets/land.jpg) no-repeat center;
+  background: url(../../assets/girl.jpg) no-repeat center;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   height: 100vh;
   padding: 55px 105px;

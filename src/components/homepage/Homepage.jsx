@@ -52,7 +52,7 @@ const Homepage = (props) => {
           <i className="fas fa-arrow-up"></i>
         </button>
         <button
-          className="next"
+          className={`next ${clicked ? "dashed" : ""}`}
           onClick={() => {
             handleClicked();
             changeSlide("next");
@@ -77,12 +77,15 @@ const Homepage = (props) => {
         </div>
         <div className={`slide two ${activeSlide === 2 ? "show-slide" : ""}`}>
           <h2 className={`hide-text ${activeSlide === 2 ? "text" : ""}`}>
-            <div className="text1">Second text for slider</div>
-            <div className="text2">Fading in</div>
-            <div className="text3">Owler.</div>
+            <div className="text1">Providing</div>
+            <div className="text2">Elegant</div>
+            <div className="text3">Solutions.</div>
           </h2>
-          <button className={`hide-btn ${activeSlide === 2 ? "btn" : ""}`}>
-            Get to know us
+          <button
+            className={`hide-btn ${activeSlide === 2 ? "btn" : ""}`}
+            onClick={() => props.history.push("/services")}
+          >
+            Services
           </button>
         </div>
         <div className={`slide three ${activeSlide === 3 ? "show-slide" : ""}`}>

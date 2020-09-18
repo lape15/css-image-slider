@@ -1,6 +1,7 @@
 .slider-wrap {
   display: block;
   position: relative;
+  box-sizing: border-box;
 }
 
 .slide-controls {
@@ -22,6 +23,7 @@
   cursor: pointer;
   z-index: 81;
   position: relative;
+  outline: none;
 }
 
 .slide-controls > button > .fas {
@@ -39,23 +41,24 @@
 .slide-controls > button.dashed:after {
   content: "";
   width: 40px;
-  height: 40px;
+  height: 45px;
   position: absolute;
   z-index: 80;
-  top: -10px;
+  top: -6px;
   left: -5px;
   padding: 5px;
   border: 1px dashed rgb(112, 212, 220);
+  transition: all 0.5s ease-in-out;
 }
 
 .slide.slide.one {
-  background: url(../../assets/land.jpg) no-repeat center;
+  background: url(../../assets/girl.jpg) no-repeat center;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   z-index: 3;
 }
 
 .slide.slide.two {
-  background: url(../../assets/moonlight-5362539_1920.jpg) no-repeat center;
+  background: url(../../assets/services.jpg) no-repeat center;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   z-index: 2;
 }
@@ -70,7 +73,7 @@
   height: 100vh;
   padding: 55px 105px;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   right: 0;
   top: -100vh;
   left: 0;
@@ -99,9 +102,9 @@
   opacity: 100;
   transition: all 0.5s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1s;
   transform: translateY(20px);
-  font-family: "Lato", sans-serif;
-  color: #fff;
-  font-family: "Comic Neue", cursive;
+
+  color: #000;
+  font-family: "Aref Ruqaa", serif;
 }
 
 .hide-text {

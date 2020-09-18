@@ -12,7 +12,7 @@
 
 .menu-box .menu-btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 60px;
   height: 45px;
   width: 45px;
@@ -29,6 +29,18 @@
   transition: all 0.5s cubic-bezier(0.76, 0.91, 0.03, 0.18) 2s;
 }
 
+.menu-box .dashed:after {
+  content: "";
+  width: 40px;
+  height: 45px;
+  position: absolute;
+  z-index: 80;
+  top: -6px;
+  left: -5px;
+  padding: 5px;
+  border: 2px dashed rgb(112, 212, 220);
+  transition: all 0.5s ease-in-out;
+}
 .menu-box .right {
   transform: translate(-220px, 0);
   transform-origin: center;
@@ -90,14 +102,14 @@
 }
 
 .menu-items {
-  padding: 20px 10px;
+  padding: 5px 10px;
   width: 69%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   text-align: center;
 
-  margin-top: 45px;
+  margin-top: 5px;
 }
 
 .menu-items .box {

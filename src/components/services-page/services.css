@@ -1,0 +1,97 @@
+:root {
+  --main-color: #bac0df;
+  --main-heading: "Aref Ruqaa", serif;
+  --main-black: #000;
+}
+.services {
+  color: var(--main-color);
+  min-height: 100vh;
+  z-index: 40;
+  position: relative;
+}
+
+.mar-bt {
+  margin-bottom: 95vh;
+  background-color: #fff;
+}
+
+.service-one {
+  background: url(../../assets/services.jpg) no-repeat center;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  height: 100vh;
+  width: 100%;
+  padding: 55px 105px;
+}
+
+.service-one .text-in {
+  color: var(--main-color);
+  line-height: 78px;
+  font-weight: 600;
+  font-size: 70px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 70px;
+  word-spacing: 1px;
+  transform-origin: left top;
+  font-family: "Comic Neue", cursive;
+  transition: 0.5s ease-in;
+}
+.service-one .text {
+  color: var(--main-color);
+  line-height: 78px;
+  font-weight: 600;
+  font-size: 70px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 70px;
+  word-spacing: 1px;
+  transform: scale(0.8);
+  transform-origin: left top;
+  transition: 0.5s ease-out;
+  font-family: "Comic Neue", cursive;
+}
+
+.service-one .text div {
+  line-height: 1;
+}
+
+.service-two {
+  z-index: 90;
+  position: absolute;
+  right: 15vh;
+  left: 15vh;
+  background: url(../../assets/dots-purple.svg),
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+  background-size: 150px auto, contain;
+  background-position: 100px top, center center;
+  background-repeat: repeat-y, repeat;
+  height: 480px;
+  border-radius: 17px;
+}
+
+.service-two.slide-up {
+  transform: translate(0, -380px);
+  transition: 0.5s ease-out 0.2s;
+}
+.service-two.slide-down {
+  transform: translate(0, -20px);
+  transition: 0.5s ease-out;
+}
+.service-two h2 {
+  font-size: 7.7rem;
+  margin-top: 15px;
+  margin-left: 90px;
+  color: var(--main-black);
+  font-family: "Comic Neue", cursive;
+}
+.service-two .text {
+  line-height: 40px;
+  transform: translateX(270px);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: grey;
+  font-family: "Comic Neue", cursive;
+  word-wrap: break-word;
+  line-break: normal;
+  width: 750px;
+}

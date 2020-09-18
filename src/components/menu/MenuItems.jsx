@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 const MenuItems = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [fixed, setFixed] = useState(false);
+  const [clicked, setClicked] = useState(false);
+
   let ref = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,7 +28,18 @@ const MenuItems = () => {
   const handleMenu = () => {
     setShowMenu(!showMenu);
   };
-  console.log(showMenu);
+
+  const handleClicked = () => {
+    setClicked(true);
+  };
+  const removeClick = () => {
+    if (clicked) {
+      setClicked(true);
+      if (clicked) {
+        setClicked(false);
+      }
+    }
+  };
   const changeClass = () => {
     if (fixed) {
       return "fixed";
@@ -37,10 +50,19 @@ const MenuItems = () => {
     return "";
   };
   return (
-    <div ref={ref} className={`menu-box ${changeClass()}`}>
+    <div
+      ref={ref}
+      className={`menu-box ${changeClass()}`}
+      onClick={removeClick}
+    >
       <div
-        className={`menu-btn ${showMenu ? "right" : ""}`}
-        onClick={handleMenu}
+        className={`menu-btn ${showMenu ? "right" : null} ${
+          clicked ? "dashed" : ""
+        }`}
+        onClick={() => {
+          handleClicked();
+          handleMenu();
+        }}
       >
         <span className={`burger ${showMenu ? "open" : ""}`}></span>
       </div>
@@ -49,9 +71,12 @@ const MenuItems = () => {
         <Link className={`box about ${showMenu ? "shrink" : ""}`} to="/about">
           <i className="fas fa-info-circle em"></i>About
         </Link>
-        <div className={`box services ${showMenu ? "shrink-one" : ""}`}>
+        <Link
+          className={`box services ${showMenu ? "shrink-one" : ""}`}
+          to="/services"
+        >
           <i className="fas fa-wrench em"></i>Services
-        </div>
+        </Link>
         <div className={`box products ${showMenu ? "shrink-two" : ""}`}>
           <i className="fas fa-wrench em"></i>Products
         </div>

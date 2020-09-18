@@ -21,8 +21,6 @@ const About = () => {
   const [load, setLoad] = useState(false);
   useEffect(() => {
     AOS.init({
-      // delay: 700,
-      // offset: 400,
       duration: 2000,
     });
     setLoad(true);
