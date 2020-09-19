@@ -1,0 +1,11 @@
+.first_service {
+  border: 3px solid black;
+}
+
+.inner_first_service {
+  background: violet;
+}
+
+.inner_second_service {
+  background: gray;
+}

@@ -7,7 +7,7 @@
   color: var(--main-color);
   height: 100vh;
   z-index: 40;
-  position: relative;
+  /* position: relative; */
 }
 
 .mar-bt {
@@ -21,7 +21,6 @@
   height: 100vh;
   width: 100%;
   padding: 55px 105px;
-  border: 5px solid black;
 }
 
 .service-one .text-in {
@@ -57,7 +56,7 @@
 }
 
 .service-two {
-  z-index: 90;
+  /* z-index: 90; */
   position: absolute;
   right: 15vh;
   left: 15vh;
@@ -97,20 +96,96 @@
   width: 750px;
 }
 
-.services {
-  height: 100vh;
-  z-index: 90;
-  right: 0;
-  left: 0;
+.services-main {
+  min-height: 100vh;
   border: 2px solid red;
 }
 
 .services-container {
   border: 2px solid green;
-  padding: 10px 35px;
-  height: 780px;
+  padding: 120px 35px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 230px 135px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.first_service {
+  color: white;
+  flex: 0 0 400px;
+  max-width: 400px;
+  margin: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px -5px rgba(160, 155, 231, 0.3);
+  justify-content: flex-start;
+}
+
+.inner_first_software {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/software.jpg);
+
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.title {
+  font-family: "Comic Neue", cursive;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+}
+
+.inner_second {
+  padding: 20px 30px 40px;
+  text-align: center;
+  color: grey;
+}
+.list {
+  list-style: none;
+  padding: 10px;
+}
+.list li {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  margin: 10px;
+}
+
+.second_service {
+  color: white;
+  flex: 0 0 400px;
+  max-width: 400px;
+  margin: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  justify-content: flex-start;
+  background-color: #fff;
+  box-shadow: 0 5px 15px -5px rgba(160, 155, 231, 0.3);
+}
+
+.inner_first_networking {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/network.jpg);
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.inner_second_networking {
 }
