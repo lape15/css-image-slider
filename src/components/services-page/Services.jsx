@@ -3,11 +3,21 @@ import "./services.css";
 import Footer from "../about/Footer";
 import software from "../../assets/sub_Images/software.svg";
 import network from "../../assets/sub_Images/network.svg";
+import branding from "../../assets/sub_Images/branding.svg";
+import electrical from "../../assets/sub_Images/electrical.svg";
+import supply from "../../assets/sub_Images/supply.svg";
+import security from "../../assets/sub_Images/security.svg";
+import Proficiencies from "./Proficiency";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Services = () => {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
     setLoad(true);
+    AOS.init({
+      // duration: 2000,
+    });
   }, []);
   console.log(load);
   return (
@@ -33,10 +43,14 @@ const Services = () => {
           </div>
         </div>
         <div className="services-main">
-          Section three about to bang yo
           <div className="services-container">
-            <div className="first_service">
-              <div className="inner_first_software">
+            <div
+              className="_service"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div className="inner _software">
                 <img src={software} alt="software" className="img" />
                 <h3 className="title">Enterprise software development </h3>
               </div>
@@ -49,8 +63,13 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="second_service">
-              <div className="inner_first_networking">
+            <div
+              className="_service"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+            >
+              <div className="inner _networking">
                 <img src={network} alt="network" className="img" />
                 <h3 className="title">Networking and cabling</h3>
               </div>
@@ -65,8 +84,93 @@ const Services = () => {
                 </ul>
               </div>
             </div>
+            <div
+              className="_service"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div className="inner _branding">
+                <img src={branding} alt="branding" className="img" />
+                <h3 className="title">Corprate branding</h3>
+              </div>
+              <div className="inner_second">
+                {" "}
+                <ul className="list">
+                  <li>Advertising, marketing and corporate promotions</li>
+                  <li>Idea generation and conceptualization</li>
+                  <li>Corporate events seasonal design and printing</li>
+                  <li>Business procurement</li>
+                  <li>Business consultancy</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="_service"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+            >
+              <div className="inner _electrical">
+                <img src={electrical} alt="electrical" className="img" />
+                <h3 className="title">Electrical services</h3>
+              </div>
+              <div className="inner_second">
+                {" "}
+                <ul className="list">
+                  <li>Electrical conduit and surface wiring</li>
+                  <li>Electrical equipments and appliances intsallation</li>
+                  <li>Industrial generator installation</li>
+                  <li>Alternate power source systems</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="_service"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div className="inner _supply">
+                <img src={supply} alt="supply" className="img" />
+                <h3 className="title">Supply and maintenance</h3>
+              </div>
+              <div className="inner_second">
+                {" "}
+                <ul className="list">
+                  <li>Computer system supply, repair and maintenance</li>
+                  <li>Electrical material sales and supply</li>
+                  <li>Systems integration</li>
+                  <li>IT equipment sales and supply</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="_service"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+            >
+              <div className="inner _security">
+                <img src={security} alt="security" className="img" />
+                <h3 className="title">Security</h3>
+              </div>
+              <div className="inner_second">
+                {" "}
+                <ul className="list">
+                  <li>
+                    Closed Circuit Television (CCTV) and surveillance camera
+                    (IPTV)
+                  </li>
+                  <li>PABX / PBX / Voice over Internet Protocol (VoIP)</li>
+                  <li>Access control & video door phone system</li>
+                  <li>Audio and video intercom</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+        <Proficiencies AOS={AOS} />
       </div>
       <Footer />
     </section>

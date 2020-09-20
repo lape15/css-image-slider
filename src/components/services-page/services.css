@@ -85,12 +85,14 @@
   font-family: "Comic Neue", cursive;
 }
 .service-two .text {
-  line-height: 40px;
   transform: translateX(270px);
-  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  line-height: 2;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
   font-weight: 300;
-  color: grey;
-  font-family: "Comic Neue", cursive;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
   word-wrap: break-word;
   line-break: normal;
   width: 750px;
@@ -98,18 +100,16 @@
 
 .services-main {
   min-height: 100vh;
-  border: 2px solid red;
 }
 
 .services-container {
-  border: 2px solid green;
   padding: 120px 35px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
-.first_service {
+._service {
   color: white;
   flex: 0 0 400px;
   max-width: 400px;
@@ -120,7 +120,17 @@
   justify-content: flex-start;
 }
 
-.inner_first_software {
+.inner {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.inner._software {
   background-image: linear-gradient(
       rgba(36, 30, 123, 0.6),
       rgba(24, 20, 82, 0.7)
@@ -135,20 +145,56 @@
   background-position: center center;
   text-align: center;
 }
-.title {
-  font-family: "Comic Neue", cursive;
+
+.inner._networking {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/network.jpg);
+}
+.inner._branding {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/branding.jpg);
+}
+.inner._electrical {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/electrical.jpg);
+}
+.inner._supply {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/supply.jpg);
 }
 
+.inner._security {
+  background-image: linear-gradient(
+      rgba(36, 30, 123, 0.6),
+      rgba(24, 20, 82, 0.7)
+    ),
+    url(../../assets/sub_Images/security.jpg);
+}
 .img {
   width: 70px;
   height: 70px;
   margin-top: 40px;
 }
+.title {
+  font-family: "Comic Neue", cursive;
+}
 
 .inner_second {
   padding: 20px 30px 40px;
   text-align: center;
-  color: grey;
+  color: #333;
 }
 .list {
   list-style: none;
@@ -156,36 +202,36 @@
 }
 .list li {
   display: block;
-  font-family: "Comic Neue", cursive;
-  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 12px;
+  font-size: 1.1rem;
+  line-height: 1.1;
 }
-
-.second_service {
-  color: white;
-  flex: 0 0 400px;
-  max-width: 400px;
-  margin: 30px;
-  border-radius: 20px;
-  overflow: hidden;
-  justify-content: flex-start;
-  background-color: #fff;
-  box-shadow: 0 5px 15px -5px rgba(160, 155, 231, 0.3);
-}
-
-.inner_first_networking {
-  background-image: linear-gradient(
-      rgba(36, 30, 123, 0.6),
-      rgba(24, 20, 82, 0.7)
-    ),
-    url(../../assets/sub_Images/network.jpg);
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  color: #fff;
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-}
-
-.inner_second_networking {
+@media only screen and (max-width: 512px) {
+  .service-one {
+    padding: 10px;
+  }
+  .service-two {
+    height: 100vh;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  .service-two h2 {
+    font-size: 2rem;
+  }
+  .service-two .text {
+    border: 2px solid red;
+    transform: translateX(0);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .services-container {
+    padding: 10px;
+  }
+  ._service {
+    flex: 0 0 100%;
+  }
 }

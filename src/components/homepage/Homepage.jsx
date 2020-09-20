@@ -64,9 +64,9 @@ const Homepage = (props) => {
       <div className="slider-wrap" onWheel={(e) => changeWheel(e)}>
         <div className={`slide one ${activeSlide === 1 ? "show-slide" : ""}`}>
           <h2 className={`hide-text ${activeSlide === 1 ? "text" : ""}`}>
-            <div className="text1">First text for slider</div>
-            <div className="text2">Elder wand</div>
-            <div className="text3">Slider.</div>
+            <div className="text1">Pioneering</div>
+            <div className="text2">Africa's</div>
+            <div className="text3">Innovation.</div>
           </h2>
           <button
             className={`hide-btn ${activeSlide === 1 ? "btn" : ""}`}

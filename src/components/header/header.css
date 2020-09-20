@@ -56,3 +56,30 @@ img {
   object-fit: cover;
   width: 200px;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .image-con {
+    width: 10%;
+  }
+  header ul {
+    width: 50%;
+    height: 50px;
+  }
+  header ul li {
+    display: inline;
+  }
+  img {
+    width: 120px;
+  }
+  .rights {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  header ul {
+    display: none;
+  }
+}

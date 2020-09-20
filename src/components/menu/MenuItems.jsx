@@ -52,7 +52,7 @@ const MenuItems = () => {
   return (
     <div
       ref={ref}
-      className={`menu-box ${changeClass()}`}
+      className={`menu-box ${changeClass()} ${showMenu ? "show" : "close"}`}
       onClick={removeClick}
     >
       <div

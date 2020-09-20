@@ -1,10 +1,19 @@
 .menu-box {
-  position: absolute;
+  position: fixed;
   right: 0;
-  width: 470px;
   padding: 10px;
-  height: 550px;
   z-index: 100;
+  border: 2px solid red;
+}
+.menu-box.show {
+  width: 470px;
+  height: 550px;
+  transition: all 0.3s ease-in;
+}
+.menu-box.close {
+  width: 120px;
+  height: 550px;
+  transition: all 0.3s ease-in 2.5s;
 }
 .fixed {
   position: fixed;
@@ -255,4 +264,7 @@
   opacity: 100;
   transform-origin: center;
   transition: all 0.1s cubic-bezier(0.63, 0.28, 0.48, 0.76) 2.1s;
+}
+
+@media only screen and (max-width: 768px) {
 }
