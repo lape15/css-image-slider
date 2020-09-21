@@ -10,7 +10,7 @@
   transition: all 0.3s ease-in;
 }
 .menu-box.close {
-  width: 120px;
+  width: 90px;
   height: 550px;
   transition: all 0.3s ease-in 2.5s;
 }
