@@ -290,12 +290,12 @@
 }
 @media only screen and (max-width: 512px) {
   .menu-box {
-    top: 180px;
+    top: 150px;
     right: 30px;
   }
   .menu-box .menu-btn {
     right: 45px;
-    bottom: 90px;
+    bottom: 120px;
   }
   .menu-box .right {
     transform: translateX(-145px);
