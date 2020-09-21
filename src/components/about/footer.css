@@ -156,6 +156,7 @@
   .side-one,
   .side-two {
     width: 100%;
+    height: 100%;
   }
   .side-one {
     text-align: left;
@@ -169,14 +170,14 @@
 @media only screen and (max-width: 512px) {
   .footer {
     top: 100px;
+    border: 4px solid purple;
   }
   .foot-first {
-    /* border: 4px solid purple; */
     display: block;
     padding: 10px;
   }
   .black {
-    margin-top: -33px;
+    margin-top: 80px;
     max-width: 100%;
   }
   .side-one,

@@ -2,6 +2,7 @@
   display: block;
   position: relative;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .slide-controls {
@@ -86,12 +87,12 @@
   bottom: 0;
   background-position: center;
   background-size: cover;
-  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  transition: all 0.8s cubic-bezier(1, 0, 1, 1);
 }
 
 .show-slide {
   top: 0;
-  transition: all 0.3s cubic-bezier(0.7, 0.44, 0.58, 1);
+  transition: all 0.8s cubic-bezier(1, 0, 1, 1);
 }
 
 .show-slide + .slide {
@@ -107,7 +108,9 @@
   margin-top: 30px;
   word-spacing: 1px;
   opacity: 100;
-  transition: all 0.5s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1s;
+  transform-origin: center;
+  /* mix-blend-mode: difference; */
+  transition: all 0.5s ease-in 1s;
   transform: translateY(20px);
 
   color: #000;
@@ -116,8 +119,9 @@
 
 .hide-text {
   opacity: 0;
+  transform-origin: center;
   transform: translateY(80px);
-  transition: all 0.5s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1.5s;
+  transition: all 0.8s ease-out 1s;
 }
 
 .slide .btn {
@@ -129,10 +133,11 @@
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 1.2rem;
+  transform-origin: center;
   margin-top: 20px;
   transform: translateY(30px);
   opacity: 100;
-  transition: all 0.3s cubic-bezier(0.76, 0.91, 0.01, 0.14) 1.5s;
+  transition: all 0.5s ease-in 1.5s;
   background-color: transparent;
   color: #333;
   font-family: "Montserrat", sans-serif;
@@ -141,8 +146,9 @@
 
 .hide-btn {
   transform: translateY(150px);
+  transform-origin: center;
   opacity: 0;
-  transition: all 0.3s cubic-bezier(0.76, 0.91, 0.01, 0.14) 2s;
+  transition: all 0.8s ease-out 1s;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
