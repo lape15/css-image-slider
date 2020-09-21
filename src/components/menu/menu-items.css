@@ -263,6 +263,15 @@
   transition: all 0.1s cubic-bezier(0.63, 0.28, 0.48, 0.76) 2.1s;
 }
 
+@media only screen and (max-width: 1200px) {
+  .menu-box {
+    top: 680px;
+    right: 30px;
+  }
+  .menu-box .right {
+    transform: translateX(-125px);
+  }
+}
 @media only screen and (max-width: 768px) {
   .menu-box {
     top: 280px;
@@ -289,6 +298,6 @@
     bottom: 90px;
   }
   .menu-box .right {
-    transform: translateX(-180px);
+    transform: translateX(-145px);
   }
 }

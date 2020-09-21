@@ -13,12 +13,12 @@ import versatile from "../../assets/deliver/versatile.svg";
 import energetic from "../../assets/deliver/energetic.svg";
 
 import Testimonial from "./Deliver";
-import bacardi from "../../assets/sponsors/Bacardi_Logo_900.png";
-import flower from "../../assets/sponsors/floral.jpg";
-import fast from "../../assets/sponsors/21_fast_ever.png";
-import kolo from "../../assets/sponsors/Koloroo.jpg";
-import bird from "../../assets/sponsors/bird.png";
-import dummy from "../../assets/sponsors/dummy.png";
+import first from "../../assets/sponsors/better/1.png";
+import second from "../../assets/sponsors/better/2.png";
+import third from "../../assets/sponsors/better/3.png";
+import fourth from "../../assets/sponsors/better/4.png";
+import five from "../../assets/sponsors/better/5.png";
+import six from "../../assets/sponsors/better/6.png";
 import bump from "../../assets/4.jpg";
 import Footer from "./Footer";
 
@@ -125,22 +125,22 @@ const About = () => {
         <div className="container-five">
           <div className="logos">
             <div className="w-15">
-              <img src={bacardi} alt="bacardi" />
+              <img src={first} alt="bacardi" />
             </div>
             <div className="w-15">
-              <img src={flower} alt="flower" />
+              <img src={second} alt="flower" />
             </div>
             <div className="w-15">
-              <img src={fast} alt="fast" />
+              <img src={third} alt="fast" />
             </div>
             <div className="w-15">
-              <img src={bird} alt="kolo" />
+              <img src={fourth} alt="kolo" />
             </div>
             <div className="w-15 index">
-              <img src={kolo} alt="bird" />
+              <img src={five} alt="bird" />
             </div>
             <div className="w-15 index">
-              <img src={dummy} alt="woody" className="woody" />
+              <img src={six} alt="woody" className="woody" />
             </div>
           </div>
           <div className="contact">

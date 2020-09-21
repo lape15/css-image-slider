@@ -20,7 +20,7 @@ header.fixed {
   position: fixed;
   transition: all 0.2s ease-out;
   background: #fff;
-  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .image-con {
@@ -54,7 +54,7 @@ header ul li {
 
 img {
   object-fit: cover;
-  width: 200px;
+  width: 180px;
 }
 @media only screen and (max-width: 768px) {
   header {
