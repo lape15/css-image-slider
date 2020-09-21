@@ -242,6 +242,9 @@
   .social-icons {
     transform: translate(20px, -10px);
   }
+  .slide-dots {
+    display: none;
+  }
   .slide-controls {
     right: 0;
     top: 38vh;
@@ -272,9 +275,6 @@
     transform: translate(0, 10px);
   }
 
-  .slide-dots {
-    display: none;
-  }
   .slide-controls {
     right: 0;
     top: 48vh;

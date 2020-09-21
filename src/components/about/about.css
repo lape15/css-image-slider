@@ -76,8 +76,8 @@
   transform: translateX(270px);
   font-size: 1.5rem;
   font-weight: 300;
-  color: grey;
-  font-family: "Comic Neue", cursive;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
   word-wrap: break-word;
   line-break: normal;
   width: 750px;
@@ -85,27 +85,24 @@
 
 .container-three {
   z-index: 90;
-  right: 0;
-  left: 0;
-  height: 780px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
-  padding: 230px 135px;
+
+  padding: 230px 155px;
 }
 
 .item-one {
   width: 40%;
-  height: 520px;
+  /* height: 520px; */
   display: flex;
   flex-flow: column wrap;
 }
 .item-one .content {
-  height: 135px;
+  height: 145px;
   margin: 10px;
-  margin-top: 25px;
+  margin-top: 10px;
   z-index: 91;
   background-color: #fff;
   border-radius: 10px;
@@ -121,18 +118,18 @@
   font-family: "Comic Neue", cursive;
 }
 .item-one .content span {
-  color: grey;
+  color: #333;
   font-size: 1rem;
   letter-spacing: 1px;
-  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
   line-height: 25px;
 }
 
 .item-two {
   width: 40%;
-  /* border: 2px solid blue; */
+
   position: relative;
-  height: 500px;
+  height: 420px;
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.8)
@@ -153,16 +150,17 @@
 
 .container-four {
   z-index: 90;
-  height: 665px;
-  padding: 10px 15px;
-  padding: 10px 85px;
+  /* height: 665px; */
+
   background: url(../../assets/about.svg);
 }
 
 .deli-atrr {
   padding: 10px;
-  margin: 0 auto;
-  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .deli-atrr h2 {
   text-align: center;
@@ -173,6 +171,7 @@
   color: #08c8d5;
   position: relative;
   line-height: 1;
+  margin-top: 15px;
 }
 .deli-atrr h2::before {
   content: "We";
@@ -182,83 +181,56 @@
 }
 
 .deli-box {
-  padding: 10px 15px;
   display: flex;
+  align-self: stretch;
   flex-flow: row wrap;
-
-  text-align: center;
-  align-items: center;
-  max-width: 100%;
+  justify-content: center;
   align-content: center;
+  margin-top: 20px;
 }
 
-.deli-box.two {
+/* .deli-box.two {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
   align-items: center;
-}
+} */
 .item-box {
-  width: 22%;
+  background: #fff;
   padding: 10px;
-  height: 190px;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0 20px 20px -20px rgba(8, 200, 213, 0.2);
+  display: flex;
   text-align: center;
-  border-radius: 17px;
-  box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
-  margin: 10px;
-  margin-top: 20px;
-  align-self: end;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-box img {
-  width: 65px;
-  height: 65px;
-  position: absolute;
-  transform: translate(-58px, 35px);
+  width: 100px;
 }
 
 .item-box div {
-  transform: translate(0px, 120px);
   padding: 5px;
   font-weight: 200;
   font-family: "Comic Neue", cursive;
   font-size: 1.2rem;
   color: #08c8d5;
 }
-.item-box.one {
-  background: url(../../assets/friends.svg), #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.item-box.two {
-  background: url(../../assets/speed.svg) #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.item-box.three {
-  background: url(../../assets/head.svg) #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.item-box.four {
-  background: url(../../assets/bulb.svg) #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40%;
-}
 .message {
-  text-align: center;
-  margin: 15px;
+  margin: 10px;
   padding: 10px;
 }
 .message span {
-  color: #000;
-  font-family: "Comic Neue", cursive;
-  font-size: 1.7rem;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 .message span > .far {
@@ -268,7 +240,7 @@
 .testimonial-slider {
   z-index: 90;
   margin-top: 25px;
-  height: 550px;
+
   width: 100%;
   padding: 5px 125px;
   background: url(../../assets/about.svg);
@@ -277,16 +249,16 @@
 }
 .slide-con {
   width: 100%;
-  padding: 5px 25px;
+  padding: 15px 25px;
   position: relative;
-  /* border: 2px solid green; */
+
   height: 350px;
 }
 
 .slider {
-  margin: 0 25px;
+  margin: 10px 25px;
   left: -50%;
-  width: calc(49% - 50px);
+  width: calc(50% - 50px);
   padding: 35px;
   border-radius: 17px;
   height: 280px;
@@ -321,7 +293,7 @@
 .slider blockquote {
   padding: 5px;
   font-weight: 100;
-  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.9);
@@ -456,13 +428,12 @@
   font-size: 1rem;
   font-weight: 900;
   /* letter-spacing: 1px; */
-  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container-five {
-  height: 730px;
   z-index: 90;
-  padding: 10px 105px;
+  padding: 10px 95px;
 
   background-color: transparent;
 }
@@ -497,17 +468,17 @@
   margin-top: 60px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 35px 10px;
   height: 490px;
 }
 .message-one {
   padding: 55px 75px;
-  width: 65%;
+  width: 60%;
 
-  height: 320px;
-  display: block;
+  height: 350px;
+  /* display: block; */
 }
 .message-one h3 {
   font-family: "Comic Neue", cursive;
@@ -517,10 +488,10 @@
   margin-bottom: 15px;
 }
 .message-one span {
-  font-family: "Comic Neue", cursive;
-  color: grey;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
   font-size: 1.1rem;
-  line-height: 25px;
+  line-height: 1.5;
   margin-top: 5px;
 }
 .message-one button {
@@ -536,8 +507,8 @@
   border-radius: 20px;
 }
 .message-two {
-  height: 320px;
-  width: 30%;
+  height: 350px;
+  width: 35%;
   background: url(../../assets/dots-torquoise.svg);
   background-position: center;
   background-size: 50%, 50%;
@@ -551,10 +522,241 @@
   bottom: 45px;
   border-radius: 20px;
 }
-/* .abt-container .pale {
-  border: 2px solid blue;
-  height: 700px;
-  z-index: 98;
-  background-color: lightgoldenrodyellow;
-  box-shadow: 0px 10px 5px -5px rgba(22, 188, 196, 0.2);
-} */
+@media only screen and (max-width: 768px) {
+  .container-one {
+    padding: 50px;
+  }
+  .container-one .text {
+    font-size: 5.5rem;
+    line-height: 1.2;
+  }
+  .container-two {
+    width: 100%;
+
+    height: 600px;
+    left: 5px;
+    padding: 10px 30px;
+    background: #fff;
+  }
+  .container-two.slide-up {
+    transform: translateY(-650px);
+  }
+  .container-two h2 {
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: "Comic Neue", cursive;
+  }
+  .container-two .text {
+    line-height: 1.7;
+    transform: translateX(0);
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
+    line-break: normal;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .container-three {
+    margin-bottom: 60px;
+    padding: 20px;
+  }
+  .item-one {
+    width: 50%;
+  }
+  .item-two {
+    height: 400px;
+  }
+  .item-one .content h6 {
+    font-size: 1.3rem;
+  }
+  .item-one .content span {
+    font-size: 0.9rem;
+  }
+  .container-four {
+    padding: 20px;
+  }
+  .deli-atrr {
+    padding: 10px;
+  }
+  .deli-box {
+  }
+  .deli-box h2 {
+    margin-top: 10;
+  }
+  .item-box {
+    width: 100px;
+    height: 100px;
+  }
+  .testimonial-slider {
+    padding: 15px 90px;
+  }
+  .slider {
+    width: calc(70% - 50px) !important;
+    height: 300px;
+    padding: 20px 10px;
+    left: -65% !important;
+  }
+  .slider.active-first {
+    filter: blur(0px);
+    transform: scale(1);
+    left: 10% !important;
+  }
+  .slider.active-second {
+    filter: blur(2px);
+    left: 85% !important;
+    transform: scale(1);
+  }
+
+  .slider.active-second ~ .slider {
+    filter: blur(2px);
+    left: 130% !important;
+    transform: scale(0.9);
+  }
+  .container-five {
+    padding: 20px;
+  }
+  .message-one {
+    width: 50%;
+    padding: 15px 10px;
+  }
+  .message-one span {
+    line-height: 2;
+  }
+  .message-two {
+    width: 50%;
+  }
+  .message-two img {
+    right: 11px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .container-one {
+    padding: 20px;
+  }
+  .container-one .text {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  .container-two {
+    width: 100%;
+
+    height: 600px;
+    left: 5px;
+    padding: 10px;
+    background: #fff;
+    height: 480px;
+  }
+  .container-two.slide-up {
+    transform: translateY(-350px);
+  }
+  .container-two h2 {
+    font-size: 3.5rem;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: "Comic Neue", cursive;
+  }
+  .container-two .text {
+    line-height: 1.8;
+    transform: translateX(0);
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
+    line-break: normal;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .container-three {
+    margin-bottom: 60px;
+    padding: 10px;
+  }
+  .item-one {
+    width: 100%;
+  }
+  .item-two {
+    width: 80%;
+    height: 380px;
+    margin-top: 35px;
+  }
+  .item-two .img {
+    left: 10px;
+  }
+  .deli-atrr {
+    padding: 10px;
+  }
+  .deli-box {
+  }
+  .deli-atrr h2 {
+    margin-top: 10;
+    font-size: 1.8rem;
+  }
+  .deli-atrr h2::before {
+    content: "We";
+    position: absolute;
+    transform: translateX(-58px);
+    color: #000;
+  }
+  .item-box {
+    width: 100px;
+    height: 100px;
+  }
+  .testimonial-slider {
+    padding: 15px 90px;
+  }
+  .testimonial-slider {
+    padding: 15px;
+  }
+  .slider {
+    width: 90% !important;
+    height: 300px;
+    padding: 20px 10px;
+    left: -105% !important;
+  }
+  .slider.active-first {
+    filter: blur(0px);
+    transform: scale(1);
+    left: 0% !important;
+  }
+  .slider.active-second {
+    filter: blur(2px);
+    left: 125% !important;
+    transform: scale(1);
+  }
+
+  .slider.active-second ~ .slider {
+    filter: blur(2px);
+    left: 150% !important;
+    transform: scale(0.9);
+  }
+  .container-five {
+    z-index: 90;
+    padding: 10px;
+
+    background-color: transparent;
+  }
+  .logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  .w-15 {
+    width: 35%;
+    border: 2px solid red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .message-two img {
+    width: 100px !important;
+    height: 100px;
+    position: absolute;
+    right: 65px;
+    bottom: 45px;
+    border-radius: 20px;
+  }
+}

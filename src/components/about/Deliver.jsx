@@ -72,9 +72,7 @@ const Testimonial = () => {
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Malesuada proin libero nunc consequat interdum varius sit amet
-            mattis. Senectus et netus et malesuada fames ac turpis. Vel elit
-            scelerisque mauris pellentesque.
+            Malesuada proin libero nunc consequat interdum varius sit amet.
           </blockquote>
           <div className="profile">
             {" "}
@@ -94,9 +92,7 @@ const Testimonial = () => {
           <blockquote>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Malesuada proin libero nunc consequat interdum varius sit amet
-            mattis. Senectus et netus et malesuada fames ac turpis. Vel elit
-            scelerisque mauris pellentesque.{" "}
+            Malesuada proin libero nunc consequat interdum varius sit amet.{" "}
           </blockquote>
           <div className="profile">
             {" "}
@@ -117,9 +113,7 @@ const Testimonial = () => {
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Malesuada proin libero nunc consequat interdum varius sit amet
-            mattis. Senectus et netus et malesuada fames ac turpis. Vel elit
-            scelerisque mauris pellentesque.{" "}
+            Malesuada proin libero nunc consequat interdum varius sit amet.{" "}
           </blockquote>
           <div className="profile">
             {" "}
@@ -140,9 +134,7 @@ const Testimonial = () => {
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Malesuada proin libero nunc consequat interdum varius sit amet
-            mattis. Senectus et netus et malesuada fames ac turpis. Vel elit
-            scelerisque mauris pellentesque.{" "}
+            Malesuada proin libero nunc consequat interdum varius sit amet.
           </blockquote>
           <div className="profile">
             {" "}
@@ -163,9 +155,7 @@ const Testimonial = () => {
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Malesuada proin libero nunc consequat interdum varius sit amet
-            mattis. Senectus et netus et malesuada fames ac turpis. Vel elit
-            scelerisque mauris pellentesque.{" "}
+            Malesuada proin libero nunc consequat interdum varius sit amet.
           </blockquote>
           <div className="profile">
             {" "}

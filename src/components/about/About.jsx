@@ -3,10 +3,15 @@ import "./about.css";
 import AOS from "aos";
 import tower from "../../assets/tower.jpg";
 import "aos/dist/aos.css";
-import user from "../../assets/user.svg";
-import speed from "../../assets/speedometer.svg";
-import briefcase from "../../assets/suitcase.svg";
-import idea from "../../assets/idea.svg";
+
+import dependable from "../../assets/deliver/dependable.svg";
+import efficient from "../../assets/deliver/efficient.svg";
+import leader from "../../assets/deliver/leader.svg";
+import innovative from "../../assets/deliver/innovative.svg";
+import responsible from "../../assets/deliver/responsible.svg";
+import versatile from "../../assets/deliver/versatile.svg";
+import energetic from "../../assets/deliver/energetic.svg";
+
 import Testimonial from "./Deliver";
 import bacardi from "../../assets/sponsors/Bacardi_Logo_900.png";
 import flower from "../../assets/sponsors/floral.jpg";
@@ -32,9 +37,9 @@ const About = () => {
       <div className="mar-bt">
         <div className="container-one">
           <h2 className={` ${load ? "text" : "text-in"}`}>
-            <div className="">First text for slider</div>
-            <div className="">Elder wand</div>
-            <div className="">Slider.</div>
+            <div className="">Pioneering</div>
+            <div className="">Africa's</div>
+            <div className="">Innovation.</div>
           </h2>
         </div>
         <div className={`container-two ${load ? "slide-up" : "slide-down"}`}>
@@ -77,56 +82,34 @@ const About = () => {
         <div className="container-four">
           <div className="deli-atrr">
             <h2>DELIVER</h2>
-            <div
-              className="deli-box"
-              data-aos="slide-up"
-              // data-aos-duration="2800"
-              data-aos-delay="50"
-            >
-              <div className="item-box one" data-aos="flip-up">
-                <img src={user} alt="user" />
+            <div className="deli-box">
+              <div className="item-box " data-aos="flip-up">
+                <img src={dependable} alt="user" />
                 <div>Dependable</div>
               </div>
-              <div className="item-box two" data-aos="flip-up">
-                <img src={speed} alt="rocket" />
+              <div className="item-box " data-aos="flip-up">
+                <img src={efficient} alt="rocket" />
                 <div>Effecient</div>
               </div>
-              <div className="item-box three" data-aos="flip-up">
-                <img src={briefcase} alt="boss" />
+              <div className="item-box " data-aos="flip-up">
+                <img src={leader} alt="boss" />
                 <div>Leader</div>
               </div>
-              <div className="item-box four" data-aos="flip-up">
-                <img src={idea} alt="rocket" />
+              <div className="item-box" data-aos="flip-up">
+                <img src={innovative} alt="rocket" />
                 <div>Innovative</div>
               </div>
-            </div>
-            <div
-              className="deli-box two"
-              data-aos="slide-up"
-              data-aos-delay="50"
-            >
-              <div
-                className="item-box two"
-                data-aos="flip-up"
-                data-aos-delay="50"
-              >
-                <img src={speed} alt="rocket" />
+
+              <div className="item-box" data-aos="flip-up" data-aos-delay="50">
+                <img src={versatile} alt="rocket" />
                 <div>Versatile</div>
               </div>
-              <div
-                className="item-box two"
-                data-aos="flip-up"
-                data-aos-delay="50"
-              >
-                <img src={speed} alt="rocket" />
+              <div className="item-box" data-aos="flip-up" data-aos-delay="50">
+                <img src={energetic} alt="rocket" />
                 <div>Energetic</div>
               </div>
-              <div
-                className="item-box three"
-                data-aos="flip-up"
-                data-aos-delay="50"
-              >
-                <img src={briefcase} alt="boss" />
+              <div className="item-box " data-aos="flip-up" data-aos-delay="50">
+                <img src={responsible} alt="boss" />
                 <div>Responsible</div>
               </div>
             </div>

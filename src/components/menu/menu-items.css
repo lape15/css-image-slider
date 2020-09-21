@@ -3,10 +3,9 @@
   right: 0;
   padding: 10px;
   z-index: 100;
-  border: 2px solid red;
 }
 .menu-box.show {
-  width: 470px;
+  width: 350px;
   height: 550px;
   transition: all 0.3s ease-in;
 }
@@ -20,8 +19,8 @@
 }
 
 .menu-box .menu-btn {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  bottom: 70px;
   right: 60px;
   height: 45px;
   width: 45px;
@@ -39,7 +38,7 @@
 }
 
 .menu-box .right {
-  transform: translate(-220px, 0);
+  transform: translate(-90px, 0);
   transform-origin: center;
   background: rgba(229, 234, 249, 0.4);
   transition: all 0.5s cubic-bezier(0.76, 0.91, 0.03, 0.18);
@@ -112,13 +111,11 @@
 
 .menu-items {
   padding: 20px 10px;
-  width: 69%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   text-align: center;
-
-  margin-top: 45px;
+  margin-top: 5px auto;
 }
 
 .menu-items .box {
@@ -129,7 +126,7 @@
   height: 120px;
   display: block;
   text-align: center;
-  color: #c49f1c;
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   opacity: 0;
@@ -267,4 +264,31 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .menu-box {
+    top: 280px;
+    right: 30px;
+  }
+  .menu-box .menu-btn {
+    bottom: 270px;
+  }
+  .menu-box .right {
+    transform: translateX(-120px);
+  }
+  .menu-box .box {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .menu-box {
+    top: 150px;
+    right: 30px;
+  }
+  .menu-box .menu-btn {
+    right: 45px;
+    bottom: 90px;
+  }
+  .menu-box .right {
+    transform: translateX(-180px);
+  }
 }
