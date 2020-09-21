@@ -115,6 +115,32 @@
   padding: 10px 5px;
   position: fixed;
 }
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    top: 100px;
+  }
+  .foot-first {
+    /* border: 4px solid purple; */
+    display: block;
+    padding: 10 15px;
+  }
+  .black {
+    margin-top: 455px;
+  }
+  .side-one,
+  .side-two {
+    width: 100%;
+  }
+  .side-one {
+    text-align: left;
+    padding: 15px 10px;
+  }
+  .side-one .word .values {
+    margin: 10px;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .footer {
     top: 100px;
