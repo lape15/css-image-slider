@@ -63,7 +63,11 @@ const Homepage = (props) => {
       </div>
       <div className="slider-wrap" onWheel={(e) => changeWheel(e)}>
         <div className={`slide one ${activeSlide === 1 ? "show-slide" : ""}`}>
-          <h2 className={`hide-text ${activeSlide === 1 ? "text" : ""}`}>
+          <h2
+            className={`text  ${
+              activeSlide === 1 ? "show-text" : " hide-text"
+            }`}
+          >
             <div className="text1">Pioneering</div>
             <div className="text2">Africa's</div>
             <div className="text3">Innovation.</div>
@@ -76,7 +80,9 @@ const Homepage = (props) => {
           </button>
         </div>
         <div className={`slide two ${activeSlide === 2 ? "show-slide" : ""}`}>
-          <h2 className={`hide-text ${activeSlide === 2 ? "text" : ""}`}>
+          <h2
+            className={`text ${activeSlide === 2 ? "show-text" : "hide-text"}`}
+          >
             <div className="text1">Providing</div>
             <div className="text2">Elegant</div>
             <div className="text3">Solutions.</div>
@@ -89,13 +95,15 @@ const Homepage = (props) => {
           </button>
         </div>
         <div className={`slide three ${activeSlide === 3 ? "show-slide" : ""}`}>
-          <h2 className={`hide-text ${activeSlide === 3 ? "text" : ""}`}>
-            <div className="text1">Last text for slider</div>
-            <div className="text2">Fading out</div>
-            <div className="text3">Errol.</div>
+          <h2
+            className={`text ${activeSlide === 3 ? "show-text" : "hide-text"}`}
+          >
+            <div className="text1">Creating an</div>
+            <div className="text2">African Tech</div>
+            <div className="text3">Future.</div>
           </h2>
           <button className={`hide-btn ${activeSlide === 3 ? "btn" : ""}`}>
-            Explore our world
+            Our products
           </button>
         </div>
       </div>

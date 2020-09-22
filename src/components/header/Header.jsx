@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 const Header = () => {
   const [fixed, setFixed] = useState(false);
@@ -44,7 +45,10 @@ const Header = () => {
   return (
     <header ref={ref} className={`${fixed ? "fixed" : "absolute"}`}>
       <div className="image-con">
-        <img src={logo} alt="logo" />
+        <Link to={"/"}>
+          {" "}
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <ul>
         <li>
