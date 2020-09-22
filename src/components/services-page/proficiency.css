@@ -37,7 +37,7 @@
   margin: 10px;
   background: none;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 14px;
   cursor: pointer;
   z-index: 2;
@@ -125,6 +125,8 @@
 @media only screen and (max-width: 512px) {
   .prof_con {
     padding: 10px;
+    display: inline-block;
+    text-align: center;
   }
   .prof_con h2 {
     font-size: 2rem;
@@ -135,8 +137,12 @@
   .btns-con {
     display: inline-block;
   }
-  .flex-container {
-    /* display: block; */
+  .btns {
+    /* border: 2px solid red; */
+    padding: 5px;
+  }
+  .btns.active:after {
+    height: 25px;
   }
   .prof-item {
     width: 75px;
