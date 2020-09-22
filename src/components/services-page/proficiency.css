@@ -40,6 +40,8 @@
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+  z-index: 2;
+  outline: none;
 }
 /* .btns.all {
   color: #a09be7;
@@ -50,6 +52,18 @@
 }
 .btns.active {
   color: #a09be7;
+
+  position: relative;
+}
+.btns.active:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  border: 2px dashed rgb(112, 212, 220);
 }
 
 .flex-container {
@@ -66,6 +80,10 @@
   border-radius: 20px;
   margin: 20px;
   box-shadow: 0 15px 15px -15px rgba(160, 155, 231, 0.7);
+}
+
+.prof-item.hide {
+  display: none;
 }
 .prof-item img {
   width: 100%;
