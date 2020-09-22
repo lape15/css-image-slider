@@ -2,27 +2,23 @@
   height: 100vh;
   width: 100%;
   padding: 10px 0px;
-  top: 45px;
+  top: 25px;
   left: 0;
   position: fixed;
   z-index: -1;
 }
 .foot-first {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
 
   background-color: #fff;
   width: 100%;
-  /* height: 550px; */
+
   padding: 15px 20px;
 }
 .side-one {
-  width: 45%;
-  height: 85%;
+  height: 100%;
   padding: 30px 15px;
-  text-align: center;
+  /* text-align: center; */
 }
 .side-one .word {
   word-break: break-all;
@@ -32,18 +28,17 @@
 
 .side-one .word p {
   color: #333;
-  line-height: 1.7;
-  font-size: 1rem;
+  line-height: 1.8;
+  font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
 }
 .side-one .word .values {
-  text-align: left;
-  width: 49%;
-  margin: 25px auto;
-  padding: 5px;
+  width: 100%;
+  /* margin: 25px auto; */
+  padding: 15px 10px;
 }
 .side-one .word .values h6 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Comic Neue", cursive;
   padding: 2px;
   font-weight: 400;
@@ -52,13 +47,12 @@
   margin-left: 36px;
 }
 .side-one .word .values p span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 2;
   font-family: "Montserrat", sans-serif;
 }
 .side-two {
-  width: 50%;
-  height: 85%;
+  height: 100%;
   padding: 10px 15px;
 }
 .side-two .value {
@@ -79,13 +73,13 @@
   padding: 5px;
 }
 .value ul > li {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
   position: static;
   margin: 2px;
   color: #333;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 1.8;
   margin-left: 35px;
 }
 
@@ -96,7 +90,7 @@
   display: inline-block;
   text-decoration: none;
   color: #22ced9;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
 }
 .dir {
@@ -111,7 +105,7 @@
   height: 45px;
   font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
-  margin-top: -128px;
+  margin-top: -188px;
   padding: 10px 5px;
   position: fixed;
 }
@@ -126,7 +120,7 @@
     padding: 10 15px;
   }
   .black {
-    margin-top: 455px;
+    margin-top: 500px;
   }
   .side-one,
   .side-two {
@@ -151,7 +145,7 @@
     padding: 10 15px;
   }
   .black {
-    margin-top: 60px;
+    margin-top: 175px;
   }
   .side-one,
   .side-two {
@@ -177,7 +171,7 @@
     padding: 10px;
   }
   .black {
-    margin-top: -30px;
+    margin-top: 7px;
     max-width: 100%;
   }
   .side-one,
