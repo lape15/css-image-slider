@@ -163,7 +163,7 @@
 }
 @media only screen and (max-width: 512px) {
   .footer {
-    top: 145px;
+    top: -145px;
     border: 4px solid purple;
   }
   .foot-first {
