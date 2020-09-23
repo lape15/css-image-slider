@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import AOS from "aos";
-import Footer from "../about/Footer";
 import Testimonials from "./Testimonials";
 import car from "../../assets/2.jpg";
 const Products = () => {

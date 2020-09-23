@@ -8,6 +8,7 @@ import About from "./components/about/About";
 import Services from "./components/services-page/Services";
 import Products from "./components/products";
 import Footer from "./components/about/Footer";
+import Partners from "./components/partners";
 
 function App() {
   // const [element, setElement] = useState(null);
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={Services} />
         <Route exact path="/products" component={Products} />
+        <Route exact path="/partners" component={Partners} />
       </Switch>
       <Footer />
     </div>

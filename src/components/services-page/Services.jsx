@@ -184,7 +184,14 @@ const Services = () => {
             <button className="best-service-btn">Reach out now</button>
           </section>
           <div className="car-con">
-            <img className="car-img" src={car} alt="car" />
+            <img
+              className="car-img"
+              src={car}
+              alt="car"
+              data-aos="fade-up-left"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            />
           </div>
         </div>
       </div>

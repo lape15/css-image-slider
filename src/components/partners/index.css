@@ -1,0 +1,98 @@
+.partners {
+  color: var(--main-color);
+  /* height: 100vh; */
+  z-index: 40;
+  width: 100%;
+  /* position: relative; */
+}
+
+.partners .mar-bt {
+  margin-bottom: 95vh;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.partners-one {
+  background: url(../../assets/fourth.jpg);
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  height: 100vh;
+  width: 100%;
+  padding: 55px 170px;
+}
+
+.partners-one h2 {
+  color: rgba(193, 255, 155, 0.6);
+  line-height: 1;
+  font-weight: 600;
+  font-size: 5.5rem;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 70px;
+  word-spacing: 1px;
+  transform: scale(1.1);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+  transform-origin: left top;
+  font-family: "Aref Ruqaa", serif;
+  transition: all 0.8s ease-in;
+}
+
+.partners-one h2 div {
+  font-family: "Aref Ruqaa", serif;
+}
+.partners-one h2.text {
+  transform: scale(0.8);
+  transform-origin: left top;
+  transition: all 0.8s ease-out;
+}
+.partners-one h2.text-in {
+  transform: scale(1.1);
+  transform-origin: left top;
+  transition: all 0.8s ease-out;
+}
+
+.partners-two {
+  /* z-index: 90; */
+  position: absolute;
+  right: 15vh;
+  left: 15vh;
+  background: url(../../assets/dots-mint.svg),
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+  background-size: 120px auto, contain;
+  background-position: 100px top, left center;
+  background-repeat: repeat-y, repeat;
+  height: 500px;
+  border-radius: 17px;
+}
+
+.partners-two.slide-up {
+  transform: translate(0, 230px);
+  transition: all 0.8s ease-out 0.2s;
+}
+.partners-two.slide-down {
+  transform: translate(0, 450px);
+  transition: all 0.8s ease-out;
+}
+.partners-two h2 {
+  font-size: 5rem;
+  margin-top: 15px;
+  margin-left: 90px;
+  color: #333;
+  font-size: 800;
+  font-family: "Aref Ruqaa", serif;
+}
+.partners-two .text {
+  margin: 20px auto;
+  line-height: 2;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  word-wrap: break-word;
+  line-break: normal;
+  width: 60%;
+  /* text-align: right; */
+}

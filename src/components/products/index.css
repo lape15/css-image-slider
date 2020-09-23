@@ -26,9 +26,9 @@
 
 .products-one h2 {
   color: rgba(255, 198, 217, 0.7);
-  line-height: 78px;
+  line-height: 1;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 5.5rem;
   margin: 5px;
   padding: 5px;
   margin-top: 70px;
@@ -74,11 +74,11 @@
 
 .products-two.slide-up {
   transform: translate(0, 230px);
-  transition: 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s;
 }
 .products-two.slide-down {
   transform: translate(0, 450px);
-  transition: 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 .products-two h2 {
   font-size: 5rem;
@@ -188,6 +188,12 @@
 
 .featured-item-img.four {
   background-image: url(../../assets/services/school.jpg);
+}
+
+@media only screen and (min-width: 1440px) {
+  .products-two.slide-up {
+    transform: translate(0, 420px);
+  }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -13,7 +13,7 @@ const Homepage = (props) => {
   const changeSlide = (position) => {
     if (position === "previous" && activeSlide > 1) {
       setActiveSlide(activeSlide - 1);
-    } else if (position === "next" && activeSlide < 3) {
+    } else if (position === "next" && activeSlide < 4) {
       setActiveSlide(activeSlide + 1);
     } else if (typeof position === "number") {
       setActiveSlide(position);
@@ -25,7 +25,7 @@ const Homepage = (props) => {
     if (date > 2000) {
       if (e.deltaY < 0 && activeSlide > 1) {
         setActiveSlide(activeSlide - 1);
-      } else if (e.deltaY > 0 && activeSlide < 3) {
+      } else if (e.deltaY > 0 && activeSlide < 4) {
         setActiveSlide(activeSlide + 1);
       }
       setLastWheeled(new Date().getTime());
@@ -33,7 +33,7 @@ const Homepage = (props) => {
   };
 
   document.addEventListener("keydown", (e) => {
-    if (e.keyCode === 40 && activeSlide < 3) {
+    if (e.keyCode === 40 && activeSlide < 4) {
       setActiveSlide(activeSlide + 1);
     } else if (e.keyCode === 38 && activeSlide > 1) {
       setActiveSlide(activeSlide - 1);
@@ -109,6 +109,21 @@ const Homepage = (props) => {
             Our products
           </button>
         </div>
+        <div className={`slide four ${activeSlide === 4 ? "show-slide" : ""}`}>
+          <h2
+            className={`text ${activeSlide === 4 ? "show-text" : "hide-text"}`}
+          >
+            <div className="text1">Supporting</div>
+            <div className="text2">Indigenous</div>
+            <div className="text3">Enterprises.</div>
+          </h2>
+          <button
+            className={`hide-btn ${activeSlide === 4 ? "btn" : ""}`}
+            onClick={() => props.history.push("/partners")}
+          >
+            Our partners
+          </button>
+        </div>
       </div>
 
       <div className="slide-dots">
@@ -123,6 +138,10 @@ const Homepage = (props) => {
         <button
           className={`dot ${activeSlide === 3 ? "active" : ""}`}
           onClick={() => changeSlide(3)}
+        ></button>
+        <button
+          className={`dot ${activeSlide === 4 ? "active" : ""}`}
+          onClick={() => changeSlide(4)}
         ></button>
       </div>
       <div className="social-icons">

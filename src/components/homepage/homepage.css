@@ -57,7 +57,7 @@
   background-position: center center;
   background-size: cover;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
-  z-index: 3;
+  z-index: 5;
 }
 
 .slide.slide.two {
@@ -65,7 +65,7 @@
   background-position: center center;
   background-size: cover;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
-  z-index: 2;
+  z-index: 4;
 }
 
 .slide.slide.three {
@@ -73,7 +73,15 @@
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   background-position: center center;
   background-size: cover;
-  z-index: 1;
+  z-index: 3;
+}
+
+.slide.slide.four {
+  background: url(../../assets/fourth.jpg);
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  background-position: center center;
+  background-size: cover;
+  z-index: 2;
 }
 
 .slide {
