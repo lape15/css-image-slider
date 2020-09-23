@@ -61,7 +61,6 @@ const Testimonials = ({ title }) => {
     return classes;
   };
 
-  console.log(title);
   return (
     <div className="testimonial-slider">
       <div
@@ -75,7 +74,7 @@ const Testimonials = ({ title }) => {
             title === "service" ? "bg-pink" : ""
           }`}
         >
-          <blockquote>
+          <blockquote className="block">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             fugiat deleniti, mollitia exercitationem provident sint asperiores
@@ -101,7 +100,7 @@ const Testimonials = ({ title }) => {
             title === "service" ? "bg-pink" : ""
           }`}
         >
-          <blockquote>
+          <blockquote className="block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             fugiat deleniti, mollitia exercitationem provident sint asperiores
             sunt et quasi ipsam ut dolorum, excepturi, quaerat nesciunt dolores?
@@ -126,7 +125,7 @@ const Testimonials = ({ title }) => {
             title === "service" ? "bg-pink" : ""
           }`}
         >
-          <blockquote>
+          <blockquote className="block">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             fugiat deleniti, mollitia exercitationem provident sint asperiores
@@ -152,7 +151,7 @@ const Testimonials = ({ title }) => {
             title === "service" ? "bg-pink" : ""
           }`}
         >
-          <blockquote>
+          <blockquote className="block">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             fugiat deleniti, mollitia exercitationem provident sint asperiores
@@ -178,7 +177,7 @@ const Testimonials = ({ title }) => {
             title === "service" ? "bg-pink" : ""
           }`}
         >
-          <blockquote>
+          <blockquote className="block">
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             fugiat deleniti, mollitia exercitationem provident sint asperiores

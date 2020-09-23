@@ -219,9 +219,9 @@
   margin: 10px 25px;
   left: -50%;
   width: calc(50% - 50px);
-  padding: 35px;
+  padding: 15px 35px;
   border-radius: 17px;
-  height: 280px;
+  height: 300px;
   color: #fff;
   box-shadow: 2px 12px 75px rgba(77, 0, 102, 0.1);
   background-color: #22ced9;
@@ -250,13 +250,13 @@
   transform: scale(0.9);
 }
 
-.slider blockquote {
-  padding: 5px;
-  font-weight: 100;
-  font-family: "Montserrat", sans-serif;
+.slider blockquote.block {
+  margin: 0.5rem 0;
+  line-height: 2;
   font-size: 1rem;
-  line-height: 22px;
-  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #fff;
 }
 
 .slider .profile {
@@ -389,4 +389,26 @@
   font-weight: 900;
   /* letter-spacing: 1px; */
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .testimonial-slider {
+    padding: 5px 50px;
+  }
+  .slider {
+    padding: 20px 15px;
+  }
+  .slider blockquote.block {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .slider {
+    height: 360px;
+    margin: 0;
+    padding: 10px 20px;
+    width: 100% !important;
+  }
 }

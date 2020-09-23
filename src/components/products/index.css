@@ -15,7 +15,9 @@
 }
 
 .products-one {
-  background: url(../../assets/pink.jpg) no-repeat center;
+  background: url(../../assets/pink.jpg);
+  background-position: center center;
+  background-size: cover;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   height: 100vh;
   width: 100%;
@@ -64,15 +66,15 @@
   left: 15vh;
   background: url(../../assets/dots-orchid.svg),
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
-  background-size: 150px auto, contain;
-  background-position: 100px top, center center;
+  background-size: 120px auto, contain;
+  background-position: 100px top, left center;
   background-repeat: repeat-y, repeat;
   height: 500px;
   border-radius: 17px;
 }
 
 .products-two.slide-up {
-  transform: translate(0, 210px);
+  transform: translate(0, 230px);
   transition: 0.8s ease-out 0.2s;
 }
 .products-two.slide-down {
@@ -83,7 +85,8 @@
   font-size: 5rem;
   margin-top: 15px;
   margin-left: 90px;
-  color: #ffc6d9;
+  color: #333;
+  font-size: 800;
   font-family: "Comic Neue", cursive;
 }
 .products-two .text {
@@ -96,7 +99,8 @@
   font-family: "Montserrat", sans-serif;
   word-wrap: break-word;
   line-break: normal;
-  width: 65%;
+  width: 60%;
+  /* text-align: right; */
 }
 
 .featured {
@@ -112,6 +116,8 @@
   font-size: 3rem;
   letter-spacing: 1px;
   font-family: "Comic Neue", cursive;
+  margin-bottom: 1rem;
+  text-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .featured-item {
@@ -183,4 +189,112 @@
 
 .featured-item-img.four {
   background-image: url(../../assets/services/school.jpg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .products-one {
+    height: 70vh;
+    padding: 55px 90px 0;
+  }
+  .products-two {
+    position: absolute;
+    right: 5vw;
+    left: 5vw;
+    height: 600px;
+  }
+
+  .products-two.slide-up {
+    transform: translate(0, 430px);
+    transition: 0.8s ease-out 0.2s;
+  }
+  .products-two.slide-down {
+    transform: translate(0, 550px);
+    transition: 0.8s ease-out;
+  }
+  .products-two h2 {
+    font-size: 5rem;
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  .products-two .text {
+    line-height: 2;
+    font-size: 1.2;
+    width: 80%;
+  }
+  .featured {
+    padding: 100px 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .products-one {
+    padding: 50px 50px 0;
+  }
+  .products-two {
+    background-position: left;
+    right: 2vw;
+    left: 2vw;
+    height: 500px;
+  }
+
+  .products-two.slide-up {
+    transform: translate(0, 410px);
+    transition: 0.8s ease-out 0.2s;
+  }
+  .products-two .text {
+    line-height: 2;
+    font-size: 1.2;
+    width: 70%;
+  }
+  .featured {
+    padding: 250px 20px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .products-one {
+    padding: 10% 15px 40px;
+  }
+
+  .products-one .text-in {
+    font-size: 3rem;
+  }
+  .products-one .text {
+    font-size: 3rem;
+  }
+  .products-one .text div {
+    line-height: 1.5;
+  }
+  .products-two {
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .products-two.slide-up {
+    transform: translate(0, 300px);
+    transition: 0.8s ease-out 0.2s;
+  }
+  .products-two.slide-down {
+    transform: translate(0, 550px);
+    transition: 0.8s ease-out 0.2s;
+  }
+  .products-two h2 {
+    font-size: 3.5rem;
+  }
+  .products-two .text {
+    margin: 5px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .featured {
+    padding: 300px 10px 20px 10px;
+    height: auto;
+  }
+
+  .featured h2 {
+    margin: 10px;
+    font-size: 2rem;
+  }
+  .featured-item-msg {
+    padding: 10px 15px;
+  }
 }
