@@ -727,7 +727,6 @@
     filter: blur(2px) !important;
     left: 85% !important;
     transform: scale(1);
-    background-color: brown;
   }
 
   .slider.active-second ~ .slider {
