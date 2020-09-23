@@ -68,18 +68,27 @@ const MenuItems = () => {
       </div>
 
       <div className="menu-items">
-        <Link className={`box about ${showMenu ? "shrink" : ""}`} to="/about">
+        <Link
+          className={`box about ${showMenu ? "shrink" : ""}`}
+          to="/about"
+          onClick={handleMenu}
+        >
           <i className="fas fa-info-circle em"></i>About
         </Link>
         <Link
           className={`box services ${showMenu ? "shrink-one" : ""}`}
           to="/services"
+          onClick={handleMenu}
         >
           <i className="fas fa-wrench em"></i>Services
         </Link>
-        <div className={`box products ${showMenu ? "shrink-two" : ""}`}>
+        <Link
+          to="/products"
+          onClick={handleMenu}
+          className={`box products ${showMenu ? "shrink-two" : ""}`}
+        >
           <i className="fas fa-wrench em"></i>Products
-        </div>
+        </Link>
         <div className={`box partners ${showMenu ? "shrink-three" : ""}`}>
           <i className="fas fa-handshake em"></i>Partners
         </div>

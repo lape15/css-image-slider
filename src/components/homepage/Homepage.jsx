@@ -102,7 +102,10 @@ const Homepage = (props) => {
             <div className="text2">African Tech</div>
             <div className="text3">Future.</div>
           </h2>
-          <button className={`hide-btn ${activeSlide === 3 ? "btn" : ""}`}>
+          <button
+            className={`hide-btn ${activeSlide === 3 ? "btn" : ""}`}
+            onClick={() => props.history.push("/products")}
+          >
             Our products
           </button>
         </div>

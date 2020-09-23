@@ -17,11 +17,13 @@
 }
 
 .service-one {
-  background: url(../../assets/services.jpg) no-repeat center;
+  background: url(../../assets/services.jpg);
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
-  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+
   width: 100%;
-  padding: 55px 105px;
+  padding: 55px 175px;
 }
 
 .service-one .text-in {
@@ -66,12 +68,12 @@
   background-size: 150px auto, contain;
   background-position: 100px top, center center;
   background-repeat: repeat-y, repeat;
-  height: 500px;
+  height: 450px;
   border-radius: 17px;
 }
 
 .service-two.slide-up {
-  transform: translate(0, -380px);
+  transform: translate(0, -220px);
   transition: 0.5s ease-out 0.2s;
 }
 .service-two.slide-down {
@@ -101,10 +103,11 @@
 
 .services-main {
   min-height: 100vh;
+  padding: 20px;
 }
 
 .services-container {
-  padding: 120px 35px;
+  padding: 200px 35px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -210,6 +213,67 @@
   line-height: 1.1;
 }
 
+.best-service {
+  justify-content: center;
+  align-items: center;
+  padding: 100px 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.best-service .service-text {
+  flex: 1;
+  display: block;
+}
+
+.service-text h2 {
+  font-size: 1.4rem;
+  color: #000;
+  letter-spacing: 1px;
+  font-family: "Comic Neue", cursive;
+}
+
+.best-service-btn {
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 15px;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(to bottom right, #08c8d5, #f9c119);
+  letter-spacing: 1px;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: 1rem;
+  cursor: pointer;
+}
+
+.service-text p {
+  margin: 0.5rem 0;
+  line-height: 2;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+.car-con {
+  background-image: url(../../assets/dots-purple.svg);
+  border-radius: 20px;
+  margin: 30px 0 0 60px;
+  background-size: 150px auto;
+}
+
+.car-con .car-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+
 @media only screen and (max-width: 1200px) {
   .service-one {
     padding: 70px 90px 0;
@@ -239,7 +303,7 @@
   .service-two h2 {
     font-size: 5rem;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 60px;
     font-family: "Comic Neue", cursive;
   }
   .service-two .text {
@@ -272,11 +336,14 @@
     box-shadow: 0 5px 15px -5px rgba(160, 155, 231, 0.3);
     justify-content: flex-start;
   }
+  .best-service {
+    padding: 100px 50px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .service-one {
-    padding: 50px;
+    padding: 50px 80px;
   }
   .service-one .text {
     font-size: 5.5rem;
@@ -284,8 +351,8 @@
   }
   .service-two {
     height: 630px;
-    left: 40px;
-    right: 40px;
+    left: 43px;
+    right: 43px;
     padding: 10px 30px;
   }
   .service-two.slide-up {
@@ -346,6 +413,13 @@
     font-size: 0.8rem;
     line-height: 1;
   }
+  .best-service {
+    padding: 50px 50px 100px;
+  }
+  .car-img {
+    width: 300px !important;
+    height: 300px !important;
+  }
 }
 @media only screen and (max-width: 512px) {
   .service-one {
@@ -359,11 +433,10 @@
   .service-two {
     background: none;
     height: 600px;
-    left: 5px;
+    left: 7px;
     padding: 10px;
-    right: 5px;
+    right: 7px;
     height: auto;
-    /* border: 2px solid green; */
   }
   .service-two.slide-up {
     transform: translateY(-100px);
@@ -389,5 +462,38 @@
     line-break: normal;
     width: 100%;
     margin: 10px auto;
+  }
+
+  .services-main {
+    padding: 10px;
+  }
+  .services-container {
+    padding: 5px;
+  }
+
+  .best-service {
+    display: block;
+    padding: 20px;
+  }
+
+  .service-text {
+    /* padding: 20px 15px; */
+    width: 100%;
+  }
+
+  .service-text h2 {
+    font-size: 1.5rem;
+  }
+  .service-text p {
+    line-height: 2;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .car-con {
+    margin: 40px 0 0 60px;
+  }
+  .car-img {
+    width: 250px !important;
+    height: 250px !important;
   }
 }

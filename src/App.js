@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, createRef } from "react";
+import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
@@ -6,6 +6,7 @@ import Homepage from "./components/homepage/Homepage";
 import MenuItems from "./components/menu/MenuItems";
 import About from "./components/about/About";
 import Services from "./components/services-page/Services";
+import Products from "./components/products";
 
 function App() {
   // const [element, setElement] = useState(null);
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={Services} />
+        <Route exact path="/products" component={Products} />
       </Switch>
     </div>
   );

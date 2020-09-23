@@ -10,6 +10,7 @@ import security from "../../assets/sub_Images/security.svg";
 import Proficiencies from "./Proficiency";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import car from "../../assets/2.jpg";
 const Services = () => {
   const [load, setLoad] = useState(false);
 
@@ -19,7 +20,7 @@ const Services = () => {
       // duration: 2000,
     });
   }, []);
-  console.log(load);
+
   return (
     <section className={`services`}>
       <div className="mar-bt">
@@ -171,6 +172,21 @@ const Services = () => {
           </div>
         </div>
         <Proficiencies AOS={AOS} />
+        <div className="best-service">
+          <section className="service-text">
+            <h2>Get the best service</h2>
+            <p>
+              Our core competence lies in being backed by seasoned operation
+              teams and partners that has extensive technological knowledge and
+              experience in the following areas. Reach out now
+            </p>
+
+            <button className="best-service-btn">Reach out now</button>
+          </section>
+          <div className="car-con">
+            <img className="car-img" src={car} alt="car" />
+          </div>
+        </div>
       </div>
       <Footer />
     </section>

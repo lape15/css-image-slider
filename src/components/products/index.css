@@ -1,0 +1,183 @@
+.products {
+  color: var(--main-color);
+  height: 100vh;
+  z-index: 40;
+  width: 100%;
+  /* position: relative; */
+}
+
+.products .mar-bt {
+  margin-bottom: 95vh;
+  background-color: #fff;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.products-one {
+  background: url(../../assets/pink.jpg) no-repeat center;
+  transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
+  height: 100vh;
+  width: 100%;
+  padding: 55px 170px;
+}
+
+.products-one .text-in {
+  color: #ffc6d9;
+  line-height: 78px;
+  font-weight: 600;
+  font-size: 70px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 70px;
+  word-spacing: 1px;
+  transform-origin: left top;
+  font-family: "Comic Neue", cursive;
+  transition: 0.5s ease-in;
+}
+.products-one .text {
+  color: #ffc6d9;
+  line-height: 78px;
+  font-weight: 600;
+  font-size: 70px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 70px;
+  word-spacing: 1px;
+  transform: scale(0.8);
+  transform-origin: left top;
+  transition: 0.5s ease-out;
+  font-family: "Comic Neue", cursive;
+}
+
+.products-one .text div {
+  line-height: 1;
+}
+
+.products-two {
+  /* z-index: 90; */
+  position: absolute;
+  right: 15vh;
+  left: 15vh;
+  background: url(../../assets/dots-orchid.svg),
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+  background-size: 150px auto, contain;
+  background-position: 100px top, center center;
+  background-repeat: repeat-y, repeat;
+  height: 500px;
+  border-radius: 17px;
+}
+
+.products-two.slide-up {
+  transform: translate(0, 185px);
+  transition: 0.5s ease-out 0.2s;
+}
+.products-two.slide-down {
+  transform: translate(0, 350px);
+  transition: 0.5s ease-out;
+}
+.products-two h2 {
+  font-size: 5rem;
+  margin-top: 15px;
+  margin-left: 90px;
+  color: #ffc6d9;
+  font-family: "Comic Neue", cursive;
+}
+.products-two .text {
+  margin: 20px auto;
+  line-height: 2;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  word-wrap: break-word;
+  line-break: normal;
+  width: 65%;
+}
+
+.featured {
+  margin-top: 20px;
+  padding: 150px 185px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.featured h2 {
+  color: #ffc6d9;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: "Comic Neue", cursive;
+}
+
+.featured-item {
+  margin: 40px 0;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 20px -5px rgba(255, 198, 217, 0.4);
+}
+
+.featured-item-msg {
+  padding: 20px 30px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-item-msg .sub-header {
+  font-size: 1.4rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+.featured-item-msg p {
+  margin: 0.5rem 0;
+  line-height: 2;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+.featured-item-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.featured-item-img::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: rgba(255, 198, 217, 0.3);
+  transition: all 0.5s ease-out;
+}
+.featured-item:hover .featured-item-img::before {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(-175px, 0);
+}
+.featured-item-img.one {
+  background-image: url(../../assets/services/hospital.jpg);
+}
+
+.featured-item-img.two {
+  background-image: url(../../assets/services/archive.jpg);
+}
+.featured-item-img.three {
+  background-image: url(../../assets/services/insurance.jpg);
+}
+
+.featured-item-img.four {
+  background-image: url(../../assets/services/school.jpg);
+}
