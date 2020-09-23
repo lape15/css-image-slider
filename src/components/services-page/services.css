@@ -5,7 +5,7 @@
 }
 .services {
   color: var(--main-color);
-  height: 100vh;
+  min-height: 100vh;
   z-index: 40;
   width: 100%;
   /* position: relative; */
