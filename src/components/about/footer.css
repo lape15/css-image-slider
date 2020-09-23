@@ -49,6 +49,8 @@
 .side-one .word .values p span {
   font-size: 0.8rem;
   line-height: 2;
+
+  margin: 10px;
   font-family: "Montserrat", sans-serif;
 }
 .side-two {
@@ -62,7 +64,7 @@
 
 .side-two h6 {
   font-size: 1.2rem;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
   padding: 2px;
   font-weight: 400;
 }
@@ -108,6 +110,15 @@
   margin-top: -188px;
   padding: 10px 5px;
   position: fixed;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    top: 130px;
+  }
+  .black {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
