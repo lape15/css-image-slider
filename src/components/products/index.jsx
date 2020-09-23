@@ -3,6 +3,7 @@ import "./index.css";
 import AOS from "aos";
 import Footer from "../about/Footer";
 import Testimonials from "./Testimonials";
+import car from "../../assets/2.jpg";
 const Products = () => {
   const [load, setLoad] = useState(false);
 
@@ -107,7 +108,21 @@ const Products = () => {
           </div>
         </div>
         <Testimonials title="service" />
-        <div></div>
+        <div className="best-service">
+          <section className="service-text">
+            <h2>Get the best solution</h2>
+            <p>
+              Our core competence lies in being backed by seasoned operation
+              teams and partners that has extensive technological knowledge and
+              experience in the following areas. Reach out now
+            </p>
+
+            <button className="best-service-btn">Reach out now</button>
+          </section>
+          <div className="car-con">
+            <img className="car-img" src={car} alt="car" />
+          </div>
+        </div>
       </div>
       <Footer />
     </section>

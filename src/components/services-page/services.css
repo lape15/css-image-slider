@@ -1,5 +1,5 @@
 :root {
-  --main-color: #bac0df;
+  --main-color: rgba(160, 155, 231, 0.4);
   --main-heading: "Aref Ruqaa", serif;
   --main-black: #000;
 }
@@ -30,27 +30,30 @@
   color: var(--main-color);
   line-height: 78px;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 6rem;
   margin: 5px;
   padding: 5px;
   margin-top: 70px;
   word-spacing: 1px;
   transform-origin: left top;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
   font-family: "Comic Neue", cursive;
-  transition: 0.5s ease-in;
+  transition: 0.8s ease-in;
 }
 .service-one .text {
   color: var(--main-color);
   line-height: 78px;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 6rem;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   margin: 5px;
   padding: 5px;
   margin-top: 70px;
   word-spacing: 1px;
   transform: scale(0.8);
   transform-origin: left top;
-  transition: 0.5s ease-out;
+  transition: 0.8s ease-out;
   font-family: "Comic Neue", cursive;
 }
 
@@ -98,6 +101,7 @@
   font-family: "Montserrat", sans-serif;
   word-wrap: break-word;
   line-break: normal;
+
   width: 750px;
 }
 

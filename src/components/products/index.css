@@ -23,35 +23,38 @@
 }
 
 .products-one .text-in {
-  color: #ffc6d9;
+  color: rgba(255, 198, 217, 0.7);
   line-height: 78px;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 6rem;
   margin: 5px;
   padding: 5px;
   margin-top: 70px;
   word-spacing: 1px;
+  transform: scale(1.1);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   transform-origin: left top;
   font-family: "Comic Neue", cursive;
-  transition: 0.5s ease-in;
+  transition: 0.8s ease-in;
 }
 .products-one .text {
-  color: #ffc6d9;
+  color: rgba(255, 198, 217, 0.7);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   line-height: 78px;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 6rem;
   margin: 5px;
   padding: 5px;
   margin-top: 70px;
   word-spacing: 1px;
   transform: scale(0.8);
   transform-origin: left top;
-  transition: 0.5s ease-out;
+  transition: 0.8s ease-out;
   font-family: "Comic Neue", cursive;
 }
 
 .products-one .text div {
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .products-two {
@@ -69,12 +72,12 @@
 }
 
 .products-two.slide-up {
-  transform: translate(0, 185px);
-  transition: 0.5s ease-out 0.2s;
+  transform: translate(0, 210px);
+  transition: 0.8s ease-out 0.2s;
 }
 .products-two.slide-down {
-  transform: translate(0, 350px);
-  transition: 0.5s ease-out;
+  transform: translate(0, 450px);
+  transition: 0.8s ease-out;
 }
 .products-two h2 {
   font-size: 5rem;
