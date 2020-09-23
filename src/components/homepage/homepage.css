@@ -107,9 +107,11 @@
   padding: 5px;
   margin-top: 30px;
   word-spacing: 1px;
-
   transition: all 0.5s ease-in 1s;
   color: #000;
+}
+
+.slide .text div {
   font-family: "Aref Ruqaa", serif;
 }
 .show-text {
@@ -229,6 +231,15 @@
 }
 .social-icons a .fab {
   font-size: 26px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .slide {
+    padding: 220px 120px;
+  }
+  .slide-controls {
+    top: 37vh;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -24,7 +24,7 @@
   padding: 55px 170px;
 }
 
-.products-one .text-in {
+.products-one h2 {
   color: rgba(255, 198, 217, 0.7);
   line-height: 78px;
   font-weight: 600;
@@ -36,23 +36,22 @@
   transform: scale(1.1);
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   transform-origin: left top;
-  font-family: "Comic Neue", cursive;
-  transition: 0.8s ease-in;
+  font-family: "Aref Ruqaa", serif;
+  transition: all 0.8s ease-in;
 }
-.products-one .text {
-  color: rgba(255, 198, 217, 0.7);
-  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  line-height: 78px;
-  font-weight: 600;
-  font-size: 6rem;
-  margin: 5px;
-  padding: 5px;
-  margin-top: 70px;
-  word-spacing: 1px;
+
+.products-one h2 div {
+  font-family: "Aref Ruqaa", serif;
+}
+.products-one h2.text {
   transform: scale(0.8);
   transform-origin: left top;
-  transition: 0.8s ease-out;
-  font-family: "Comic Neue", cursive;
+  transition: all 0.8s ease-out;
+}
+.products-one h2.text-in {
+  transform: scale(1.1);
+  transform-origin: left top;
+  transition: all 0.8s ease-out;
 }
 
 .products-one .text div {
@@ -87,7 +86,7 @@
   margin-left: 90px;
   color: #333;
   font-size: 800;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
 }
 .products-two .text {
   margin: 20px auto;
@@ -115,7 +114,7 @@
   color: #ffc6d9;
   font-size: 3rem;
   letter-spacing: 1px;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
   margin-bottom: 1rem;
   text-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2);
 }
@@ -256,10 +255,7 @@
     padding: 10% 15px 40px;
   }
 
-  .products-one .text-in {
-    font-size: 3rem;
-  }
-  .products-one .text {
+  .products-one h2 {
     font-size: 3rem;
   }
   .products-one .text div {
@@ -271,11 +267,11 @@
   }
   .products-two.slide-up {
     transform: translate(0, 300px);
-    transition: 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s;
   }
   .products-two.slide-down {
     transform: translate(0, 550px);
-    transition: 0.8s ease-out 0.2s;
+    transition: all 0.8s ease-out 0.2s;
   }
   .products-two h2 {
     font-size: 3.5rem;

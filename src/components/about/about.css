@@ -16,42 +16,42 @@
   background-size: cover;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   height: 100vh;
-  padding: 55px 105px;
+  padding: 55px 175px;
 }
 
-.container-one .text-in {
-  color: #fff;
-  line-height: 78px;
+.container-one h2 {
+  color: rgba(8, 200, 213, 0.3);
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+  line-height: 1.2;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 5.5rem;
   margin: 5px;
   padding: 5px;
   margin-top: 70px;
   word-spacing: 1px;
   transform-origin: left top;
-  font-family: "Comic Neue", cursive;
-  transition: 0.5s ease-in;
+  transition: all 0.5s ease-out;
+  font-family: "Aref Ruqaa", serif;
 }
-.container-one .text {
-  color: #9ecdd1;
-  line-height: 78px;
-  font-weight: 600;
-  font-size: 70px;
-  margin: 5px;
-  padding: 5px;
-  margin-top: 70px;
-  word-spacing: 1px;
+.container-one h2 div {
+  font-family: inherit;
+}
+
+.container-one h2.text {
   transform: scale(0.8);
-  transform-origin: left top;
-  transition: 0.5s ease-out;
-  font-family: "Comic Neue", cursive;
+  transition: all 0.5s ease-out;
 }
+
+.container-one h2.text-in {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
 .container-two {
   z-index: 90;
   position: absolute;
   right: 15vh;
   left: 15vh;
-
   background: url(../../assets/dots-torquoise.svg),
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
   background-size: 150px auto, contain;
@@ -61,18 +61,18 @@
   border-radius: 17px;
 }
 .container-two.slide-up {
-  transform: translate(0, -380px);
-  transition: 0.5s ease-out 0.2s;
+  transform: translate(0, -340px);
+  transition: all 0.5s ease-out 0.2s;
 }
 .container-two.slide-down {
   transform: translate(0, -20px);
-  transition: 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .container-two h2 {
-  font-size: 7.7rem;
+  font-size: 5rem;
   margin-top: 15px;
   margin-left: 90px;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
 }
 .container-two .text {
   line-height: 40px;
@@ -115,10 +115,10 @@
 }
 .item-one .content h6 {
   color: rgb(29, 188, 196);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: 1px;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
 }
 .item-one .content span {
   color: #333;
@@ -169,7 +169,7 @@
   text-align: center;
   padding: 5px;
   font-weight: 700;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
   font-size: 3.2rem;
   color: #08c8d5;
   position: relative;
@@ -179,7 +179,7 @@
 .deli-atrr h2::before {
   content: "We";
   position: absolute;
-  transform: translateX(-80px);
+  transform: translateX(-100px);
   color: #000;
 }
 
@@ -232,7 +232,7 @@
 }
 .message span {
   color: #333;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aref Ruqaa", serif;
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -315,7 +315,7 @@
 .slider .profile .title span {
   margin: 5px;
   padding: 10px;
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
   font-size: 1rem;
   line-height: 27px;
 }
@@ -484,7 +484,7 @@
   /* display: block; */
 }
 .message-one h3 {
-  font-family: "Comic Neue", cursive;
+  font-family: "Aref Ruqaa", serif;
   font-size: 3rem;
   line-height: 40px;
   padding: 5px;
@@ -501,7 +501,7 @@
   display: block;
   margin-top: 25px;
   padding: 10px 45px;
-  font-family: "Comic Neue", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 1rem;
   background: linear-gradient(to right, #09c5d3, #c49f1c);
@@ -526,12 +526,49 @@
   border-radius: 20px;
 }
 
+@media only screen and (max-width: 1440px) {
+  /* .container-one {
+    padding: 65px 165px;
+  }
+  .container-one .text {
+    font-size: 7rem;
+    line-height: 1.3;
+  }
+  .container-two {
+    height: auto;
+    left: 35px;
+    right: 35px;
+    padding: 10px 15px;
+  } */
+  /* .container-two.slide-up {
+    transform: translateY(-250px);
+  }
+
+  /* .container-two h2 {
+    font-size: 5rem;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: "Comic Neue", cursive;
+  } */
+  /* .container-two .text {
+    line-height: 1.7;
+    transform: translateX(0);
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
+    line-break: normal;
+    width: 65%;
+    margin: 10px auto;
+  }  */
+}
 @media only screen and (max-width: 1200px) {
   .container-one {
     padding: 70px 90px 0;
     height: 50vh;
   }
-  .container-one .text {
+  .container-one h2 {
     font-size: 6rem;
     line-height: 1.3;
   }
@@ -548,7 +585,6 @@
     font-size: 5rem;
     margin-top: 15px;
     margin-left: 20px;
-    font-family: "Comic Neue", cursive;
   }
   .container-two .text {
     line-height: 1.7;
@@ -556,7 +592,7 @@
     font-size: 1.7rem;
     font-weight: 300;
     color: #333;
-    font-family: "Montserrat", sans-serif;
+
     word-wrap: break-word;
     line-break: normal;
     width: 65%;
@@ -602,7 +638,7 @@
   .container-one {
     padding: 50px;
   }
-  .container-one .text {
+  .container-one h2 {
     font-size: 5.5rem;
     line-height: 1.2;
   }
@@ -621,7 +657,6 @@
     font-size: 4rem;
     margin-top: 15px;
     margin-left: 10px;
-    font-family: "Comic Neue", cursive;
   }
   .container-two .text {
     line-height: 1.7;
@@ -715,7 +750,7 @@
   .container-one {
     padding: 20px;
   }
-  .container-one .text {
+  .container-one h2 {
     font-size: 3rem;
     line-height: 1.2;
   }

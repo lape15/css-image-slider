@@ -20,7 +20,6 @@ import fourth from "../../assets/sponsors/better/4.png";
 import five from "../../assets/sponsors/better/5.png";
 import six from "../../assets/sponsors/better/6.png";
 import bump from "../../assets/4.jpg";
-import Footer from "./Footer";
 
 const About = () => {
   const [load, setLoad] = useState(false);
