@@ -135,7 +135,7 @@ const About = () => {
               </div>
 
               <div
-                className="item-bo"
+                className="item-box"
                 data-aos="flip-up"
                 data-aos-delay="200"
                 data-aos-duration="500"
@@ -144,7 +144,7 @@ const About = () => {
                 <div>Versatile</div>
               </div>
               <div
-                className="item-bo"
+                className="item-box"
                 data-aos="flip-up"
                 data-aos-delay="200"
                 data-aos-duration="500"
