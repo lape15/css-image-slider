@@ -53,20 +53,35 @@ const About = () => {
         </div>
         <div className="container-three">
           <div className="item-one">
-            <div className="content" data-aos="slide-right">
+            <div
+              className="content"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="100"
+            >
               <h6>Our vision</h6>
               <span>
                 Providing sustainable and affordable world class solutions.
               </span>
             </div>
-            <div className="content" data-aos="slide-right">
+            <div
+              className="content"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="100"
+            >
               <h6>Our mission</h6>
               <span>
                 Reaching capacity building through cost effective and
                 competitive brand building
               </span>
             </div>
-            <div className="content" data-aos="slide-right">
+            <div
+              className="content"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="100"
+            >
               <h6>Our responsibiliy</h6>
               <span>
                 Elder wand pride itself in qualitfy service delivery.It makes
@@ -82,32 +97,67 @@ const About = () => {
           <div className="deli-atrr">
             <h2>DELIVER</h2>
             <div className="deli-box">
-              <div className="item-box " data-aos="flip-up">
+              <div
+                className="item-box"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={dependable} alt="user" />
                 <div>Dependable</div>
               </div>
-              <div className="item-box " data-aos="flip-up">
+              <div
+                className="item-box"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={efficient} alt="rocket" />
                 <div>Effecient</div>
               </div>
-              <div className="item-box " data-aos="flip-up">
+              <div
+                className="item-box"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={leader} alt="boss" />
                 <div>Leader</div>
               </div>
-              <div className="item-box" data-aos="flip-up">
+              <div
+                className="item-box"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={innovative} alt="rocket" />
                 <div>Innovative</div>
               </div>
 
-              <div className="item-box" data-aos="flip-up" data-aos-delay="50">
+              <div
+                className="item-bo"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={versatile} alt="rocket" />
                 <div>Versatile</div>
               </div>
-              <div className="item-box" data-aos="flip-up" data-aos-delay="50">
+              <div
+                className="item-bo"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={energetic} alt="rocket" />
                 <div>Energetic</div>
               </div>
-              <div className="item-box " data-aos="flip-up" data-aos-delay="50">
+              <div
+                className="item-box"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+              >
                 <img src={responsible} alt="boss" />
                 <div>Responsible</div>
               </div>
