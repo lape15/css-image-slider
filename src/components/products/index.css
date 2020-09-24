@@ -9,6 +9,7 @@
 .products .mar-bt {
   margin-bottom: 95vh;
   background-color: #fff;
+  box-shadow: 0 5px 40px -15px rgba(0, 0, 0, 0.3);
 
   display: flex;
   flex-flow: column nowrap;
@@ -20,7 +21,6 @@
   background-size: cover;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   height: 100vh;
-  width: 100%;
   padding: 55px 170px;
 }
 

@@ -22,7 +22,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section className={`services`}>
+    <div className={`services`}>
       <div className="mar-bt">
         {" "}
         <div className="service-one">
@@ -195,7 +195,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

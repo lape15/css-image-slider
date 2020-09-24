@@ -9,6 +9,7 @@
 .mar-bt {
   margin-bottom: 95vh;
   background-color: #fff;
+  box-shadow: 0 5px 40px -15px rgba(0, 0, 0, 0.3);
 }
 .container-one {
   background: url(../../assets/girl.jpg) no-repeat;

@@ -5,24 +5,25 @@
 }
 .services {
   color: var(--main-color);
-  /* min-height: 100vh; */
+  background-color: #fff;
   z-index: 40;
   width: 100%;
-  /* position: relative; */
+  position: relative;
 }
 
-.mar-bt {
+.services .mar-bt {
   margin-bottom: 95vh;
   background-color: #fff;
+  box-shadow: 0 5px 40px -15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .service-one {
-  background: url(../../assets/services.jpg);
+  background: url(../../assets/services.jpg) no-repeat;
   transition: all 0.9s cubic-bezier(0.7, 0.44, 0.58, 1);
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  width: 100%;
   padding: 55px 175px;
 }
 
@@ -313,10 +314,15 @@
       rgba(255, 255, 255, 1)
     );
   }
+
+  .service-two.slide-down {
+    transform: translate(0, -120px);
+    transition: all 0.5s ease-out;
+  }
   .service-two h2 {
     font-size: 5rem;
     margin-top: 15px;
-    margin-left: 60px;
+    margin-left: 20px;
   }
   .service-two .text {
     line-height: 1.7;
@@ -362,9 +368,9 @@
     line-height: 1.2;
   }
   .service-two {
-    height: 630px;
-    left: 43px;
-    right: 43px;
+    height: 680px;
+    left: 45px;
+    right: 45px;
     padding: 10px 30px;
   }
   .service-two.slide-up {
@@ -394,7 +400,7 @@
   }
 
   .services-container {
-    padding: 20px 15px;
+    padding: 120px 15px;
     margin-top: 420px;
   }
   ._service {
@@ -435,7 +441,7 @@
 }
 @media only screen and (max-width: 512px) {
   .service-one {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   .service-one h2 {
@@ -443,7 +449,8 @@
     line-height: 1.2;
   }
   .service-two {
-    background: none;
+    background-repeat: no-repeat;
+    background-position: top left;
     height: 600px;
     left: 7px;
     padding: 10px;

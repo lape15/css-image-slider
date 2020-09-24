@@ -107,7 +107,7 @@
   height: 45px;
   font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
-  margin-top: -188px;
+  margin-top: -208px;
   padding: 10px 5px;
   position: fixed;
 }
@@ -132,7 +132,7 @@
     padding: 10 15px;
   }
   .black {
-    margin-top: 500px;
+    margin-top: 450px;
   }
   .side-one,
   .side-two {
@@ -147,7 +147,7 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .footer {
     top: 100px;
     padding: 20px 0;
@@ -158,7 +158,7 @@
     padding: 10 15px;
   }
   .black {
-    margin-top: 175px;
+    margin-top: 125px;
   }
   .side-one,
   .side-two {
@@ -183,7 +183,7 @@
     padding: 10px;
   }
   .black {
-    margin-top: 40px;
+    margin-top: 30px;
     max-width: 100%;
   }
   .side-one,
