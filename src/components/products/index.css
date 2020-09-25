@@ -3,14 +3,14 @@
   /* height: 100vh; */
   z-index: 40;
   width: 100%;
-  /* position: relative; */
+  position: relative;
 }
 
 .products .mar-bt {
   margin-bottom: 95vh;
   background-color: #fff;
   box-shadow: 0 5px 40px -15px rgba(0, 0, 0, 0.3);
-
+  overflow: hidden;
   display: flex;
   flex-flow: column nowrap;
 }
